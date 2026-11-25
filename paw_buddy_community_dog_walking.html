@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paw Buddy | Weekend Dog Walking & Live WhatsApp Tracking</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Cormorant Garamond, Caveat (Handwritten Script), & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            script: ['"Caveat"', 'cursive'],
+          },
+          colors: {
+            espresso: {
+              950: '#27150B',
+              900: '#3E2414',
+              800: '#53321D',
+              700: '#6D442A',
+              600: '#8A593B',
+            },
+            latte: {
+              50: '#FCF9F4',
+              100: '#F7EFE4',
+              200: '#EFE2D0',
+              300: '#E2CEB3',
+            },
+            gold: {
+              300: '#DFC098',
+              400: '#C99E67',
+              500: '#B5844A',
+              600: '#966832',
+            },
+            whatsapp: '#25D366',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @keyframes pulse-ring {
+      0% { transform: scale(0.85); opacity: 0.9; }
+      70% { transform: scale(1.75); opacity: 0; }
+      100% { transform: scale(1.75); opacity: 0; }
+    }
+    .pulse-dot::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 9999px;
+      background-color: #25D366;
+      animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+    .hero-warm-bg {
+      background:
+        radial-gradient(circle at 20% 25%, rgba(255, 253, 249, 0.95) 0%, rgba(247, 239, 228, 0.7) 48%, rgba(239, 226, 208, 0.95) 100%);
+    }
+    .slot-card-selected {
+      background-color: #3E2414 !important;
+      color: #FCF9F4 !important;
+      border-color: #B5844A !important;
+      box-shadow: 0 10px 25px -5px rgba(62, 36, 20, 0.3);
+    }
+    /* Diagonal Walking Dog Paw Steps Trail in Soft Espresso Brown */
+    .paw-trail-hero-bg {
+      background-image:
+        radial-gradient(circle at 22% 28%, rgba(255, 253, 249, 0.92) 0%, rgba(247, 239, 228, 0.78) 52%, rgba(239, 226, 208, 0.92) 100%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg fill='%233E2414' fill-opacity='0.065'%3E%3Cg transform='translate(46, 174) rotate(36)'%3E%3Cellipse cx='0' cy='5' rx='8' ry='6.5'/%3E%3Cellipse cx='-8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(-22 -8.5 -3)'/%3E%3Cellipse cx='-3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(-8 -3 -7.5)'/%3E%3Cellipse cx='3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(8 3 -7.5)'/%3E%3Cellipse cx='8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(22 8.5 -3)'/%3E%3C/g%3E%3Cg transform='translate(114, 146) rotate(44)'%3E%3Cellipse cx='0' cy='5' rx='8' ry='6.5'/%3E%3Cellipse cx='-8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(-22 -8.5 -3)'/%3E%3Cellipse cx='-3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(-8 -3 -7.5)'/%3E%3Cellipse cx='3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(8 3 -7.5)'/%3E%3Cellipse cx='8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(22 8.5 -3)'/%3E%3C/g%3E%3Cg transform='translate(136, 84) rotate(36)'%3E%3Cellipse cx='0' cy='5' rx='8' ry='6.5'/%3E%3Cellipse cx='-8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(-22 -8.5 -3)'/%3E%3Cellipse cx='-3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(-8 -3 -7.5)'/%3E%3Cellipse cx='3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(8 3 -7.5)'/%3E%3Cellipse cx='8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(22 8.5 -3)'/%3E%3C/g%3E%3Cg transform='translate(198, 54) rotate(44)'%3E%3Cellipse cx='0' cy='5' rx='8' ry='6.5'/%3E%3Cellipse cx='-8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(-22 -8.5 -3)'/%3E%3Cellipse cx='-3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(-8 -3 -7.5)'/%3E%3Cellipse cx='3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(8 3 -7.5)'/%3E%3Cellipse cx='8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(22 8.5 -3)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-size: 100% 100%, 220px 220px;
+    }
+    .paw-trail-light-bg {
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg fill='%233E2414' fill-opacity='0.05'%3E%3Cg transform='translate(48, 190) rotate(35)'%3E%3Cellipse cx='0' cy='5' rx='8' ry='6.5'/%3E%3Cellipse cx='-8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(-22 -8.5 -3)'/%3E%3Cellipse cx='-3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(-8 -3 -7.5)'/%3E%3Cellipse cx='3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(8 3 -7.5)'/%3E%3Cellipse cx='8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(22 8.5 -3)'/%3E%3C/g%3E%3Cg transform='translate(122, 160) rotate(45)'%3E%3Cellipse cx='0' cy='5' rx='8' ry='6.5'/%3E%3Cellipse cx='-8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(-22 -8.5 -3)'/%3E%3Cellipse cx='-3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(-8 -3 -7.5)'/%3E%3Cellipse cx='3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(8 3 -7.5)'/%3E%3Cellipse cx='8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(22 8.5 -3)'/%3E%3C/g%3E%3Cg transform='translate(148, 92) rotate(35)'%3E%3Cellipse cx='0' cy='5' rx='8' ry='6.5'/%3E%3Cellipse cx='-8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(-22 -8.5 -3)'/%3E%3Cellipse cx='-3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(-8 -3 -7.5)'/%3E%3Cellipse cx='3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(8 3 -7.5)'/%3E%3Cellipse cx='8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(22 8.5 -3)'/%3E%3C/g%3E%3Cg transform='translate(216, 60) rotate(45)'%3E%3Cellipse cx='0' cy='5' rx='8' ry='6.5'/%3E%3Cellipse cx='-8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(-22 -8.5 -3)'/%3E%3Cellipse cx='-3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(-8 -3 -7.5)'/%3E%3Cellipse cx='3' cy='-7.5' rx='3.2' ry='4.5' transform='rotate(8 3 -7.5)'/%3E%3Cellipse cx='8.5' cy='-3' rx='3.2' ry='4.5' transform='rotate(22 8.5 -3)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-size: 240px 240px;
+    }
+  </style>
+</head>
+<body class="bg-latte-50 text-espresso-900 font-sans antialiased selection:bg-espresso-900 selection:text-latte-50">
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- Top Announcement Strip in Deep Espresso & Gold -->
+  <div class="bg-espresso-900 text-latte-50 text-xs sm:text-sm font-bold py-2.5 px-4 text-center tracking-wide border-b border-gold-400/40">
+    <span class="inline-flex items-center gap-2">
+      <i class="fa-solid fa-paw text-gold-300"></i>
+      WEEKEND TRIAL OFFER: Book Your Dog's First Walk at Just ₹99 • Sat &amp; Sun (3:00 PM – 9:00 PM)
+      <i class="fa-solid fa-paw text-gold-300 hidden sm:inline"></i>
+    </span>
+  </div>
+
+  <!-- Sticky Navigation Bar in Warm Cream & Espresso -->
+  <header class="sticky top-0 z-40 bg-latte-50/95 backdrop-blur-md border-b border-gold-400/40 text-espresso-900 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
+      <!-- Brand Logo (10 taps opens Admin PIN Lock) -->
+      <a href="#" onclick="handleLogoAdminTap(event)" class="flex items-center gap-2.5 group select-none">
+        <div class="w-10 h-10 rounded-2xl bg-espresso-900 text-latte-50 flex items-center justify-center shadow-md border border-gold-400 group-hover:scale-105 transition">
+          <i class="fa-solid fa-paw text-lg text-gold-300"></i>
+        </div>
+        <div>
+          <span class="font-serif font-extrabold text-2xl tracking-tight text-espresso-900 block leading-none">Paw Buddy</span>
+          <span class="text-[10px] font-bold text-espresso-700 tracking-widest uppercase">Society Dog Walks</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-bold text-espresso-800">
+        <button type="button" onclick="openWalkerProfileModal()" class="hover:text-gold-600 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-user-check text-gold-600"></i>
+          <span>Meet Your Walker</span>
+        </button>
+        <a href="#live-tracking" class="hover:text-gold-600 transition">Live WhatsApp GPS</a>
+        <a href="#packages" class="hover:text-gold-600 transition">Trial &amp; Walk Plans</a>
+        <a href="#book-walk" class="hover:text-gold-600 transition flex items-center gap-1.5">
+          Weekend Slots
+          <span id="nav-slot-badge" class="bg-latte-200 text-espresso-900 border border-gold-400 text-xs font-extrabold px-2.5 py-0.5 rounded-full">Live</span>
+        </a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2.5">
+        <a href="#book-walk" class="bg-espresso-900 hover:bg-espresso-800 text-latte-50 font-extrabold text-sm px-5 py-2.5 rounded-xl shadow-md border border-gold-400/60 transition flex items-center gap-2">
+          <span>Book ₹99 Trial</span>
+          <i class="fa-solid fa-arrow-right text-xs text-gold-300"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Warm Cream, Espresso & Gold Boutique Hero Section -->
+  <section id="hero-section" class="relative overflow-hidden bg-latte-100 paw-trail-hero-bg text-espresso-900 pt-10 pb-14 sm:pt-14 sm:pb-20 border-b-2 border-gold-400/50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+          <!-- Boutique Divider Header matching reference style -->
+          <div class="inline-flex items-center gap-3 text-xs sm:text-sm font-extrabold tracking-[0.2em] uppercase text-espresso-800">
+            <span class="w-8 h-[1.5px] bg-espresso-800/60"></span>
+            <i class="fa-solid fa-paw text-espresso-900"></i>
+            <span>Society Residents Only</span>
+            <i class="fa-solid fa-paw text-espresso-900"></i>
+            <span class="w-8 h-[1.5px] bg-espresso-800/60"></span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-[3.6rem] font-extrabold text-espresso-900 leading-[1.08] tracking-tight">
+            Weekend Dog Walks
+            <span class="font-script text-5xl sm:text-6xl lg:text-[4.2rem] font-bold text-espresso-700 block sm:inline sm:ml-2">Tracked Live ♡</span>
+          </h1>
+
+          <p class="text-xs sm:text-sm font-extrabold tracking-[0.16em] uppercase text-espresso-800 flex items-center justify-center lg:justify-start gap-2">
+            <span>Give Love... Get Love Back</span>
+            <i class="fa-solid fa-heart text-espresso-900"></i>
+            <span>Sat &amp; Sun • 3:00 PM – 9:00 PM</span>
+          </p>
+
+          <p class="text-base sm:text-lg text-espresso-800 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Busy this weekend? Book a dedicated <strong class="text-espresso-950">1-on-1 neighbour walk</strong> inside our gated society—complete with <strong class="text-espresso-950 underline decoration-gold-500 decoration-2 underline-offset-4">real-time WhatsApp Live Location</strong> from your doorstep back to home.
+          </p>
+
+          <!-- Gold-Bordered Cream Offer Card (Inspired by Reference Box) -->
+          <div class="bg-latte-50/95 border-2 border-gold-400 rounded-2xl p-4 sm:p-5 max-w-xl mx-auto lg:mx-0 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md">
+            <div class="text-left">
+              <span class="text-[11px] font-extrabold uppercase tracking-widest text-gold-600 block">First-Time Neighbour Offer</span>
+              <p class="text-sm sm:text-base font-extrabold text-espresso-900 mt-0.5">Try 1 Weekend Walk for Just <span class="font-serif text-3xl text-espresso-950 font-extrabold">₹99</span></p>
+              <p class="text-xs text-espresso-700 mt-0.5">Includes a free 10–15 min family Meet &amp; Greet first!</p>
+            </div>
+            <a href="#book-walk" class="w-full sm:w-auto text-center shrink-0 bg-espresso-900 hover:bg-espresso-800 text-latte-50 font-extrabold text-sm px-6 py-3.5 rounded-xl shadow-md border border-gold-400 transition">
+              Claim ₹99 Slot →
+            </a>
+          </div>
+
+          <!-- Primary & Secondary CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-1">
+            <a href="#book-walk" class="w-full sm:w-auto bg-espresso-900 hover:bg-espresso-800 text-latte-50 font-extrabold px-7 py-4 rounded-2xl shadow-lg border border-gold-400/70 transition flex items-center justify-center gap-2.5 text-base">
+              <i class="fa-solid fa-calendar-check text-gold-300"></i>
+              <span>Pick a Weekend Slot</span>
+            </a>
+            <button type="button" onclick="openWalkerProfileModal()" class="w-full sm:w-auto bg-latte-50 hover:bg-white border-2 border-gold-400 text-espresso-900 font-extrabold px-7 py-4 rounded-2xl shadow-sm transition flex items-center justify-center gap-2.5 text-base">
+              <i class="fa-solid fa-id-badge text-espresso-800 text-lg"></i>
+              <span>Meet Your Walker</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Visual Card: Gold-Bordered Pet Walk Profile Card (Styled after Reference) -->
+        <div class="lg:col-span-5">
+          <div class="relative bg-latte-50 text-espresso-900 rounded-3xl p-6 shadow-xl border-2 border-gold-400 max-w-md mx-auto">
+            <!-- Header -->
+            <div class="flex items-center justify-between pb-4 border-b border-gold-400/50">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-espresso-900 text-gold-300 flex items-center justify-center text-2xl shadow-sm border border-gold-400">
+                  <i class="fa-solid fa-dog"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif font-extrabold text-espresso-950 text-xl leading-tight">Simba • Golden Retriever</h3>
+                  <p class="text-xs font-semibold text-espresso-700">Fresca J-804 • Sat 5:00 PM Slot</p>
+                </div>
+              </div>
+              <span class="inline-flex items-center gap-1.5 bg-latte-100 text-espresso-900 border border-gold-400 px-3 py-1 rounded-full text-xs font-extrabold">
+                <span class="relative w-2 h-2 rounded-full bg-whatsapp pulse-dot"></span>
+                LIVE
+              </span>
+            </div>
+
+            <!-- Reference-Style Spec List with Paw Icons -->
+            <div class="my-4 bg-latte-100/80 rounded-2xl p-4 border border-gold-400/60 space-y-2 text-xs sm:text-sm">
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-paw text-espresso-900 w-4"></i>
+                <span class="font-bold text-espresso-700 w-24">Walker</span>
+                <span class="font-extrabold text-espresso-950">: Omkar Jangam (J-804)</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-paw text-espresso-900 w-4"></i>
+                <span class="font-bold text-espresso-700 w-24">Attention</span>
+                <span class="font-extrabold text-espresso-950">: 1-on-1 Dedicated Walk</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-paw text-espresso-900 w-4"></i>
+                <span class="font-bold text-espresso-700 w-24">GPS Ping</span>
+                <span class="font-extrabold text-espresso-950">: Live WhatsApp Location</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-paw text-espresso-900 w-4"></i>
+                <span class="font-bold text-espresso-700 w-24">Radius</span>
+                <span class="font-extrabold text-espresso-950">: Society / 1–1.5 km Loop</span>
+              </div>
+            </div>
+
+            <!-- Live Location Ping Banner -->
+            <div class="bg-white rounded-xl p-3 shadow-sm border border-gold-400/70 flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-whatsapp/15 text-whatsapp flex items-center justify-center">
+                  <i class="fa-brands fa-whatsapp text-lg"></i>
+                </div>
+                <div class="text-xs">
+                  <p class="font-extrabold text-espresso-950">WhatsApp Live Location</p>
+                  <p class="text-[11px] text-espresso-700">Gentle pace • 1.4 km covered</p>
+                </div>
+              </div>
+              <a href="#book-walk" class="text-xs font-extrabold text-espresso-900 underline decoration-gold-500 hover:text-gold-600">Book →</a>
+            </div>
+
+            <p class="font-script text-xl text-center text-espresso-800 mt-3">
+              A Joyful Stroll Awaits Your Furry Family Member ♡
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reference-Inspired "OUR WALK PROMISES" Horizontal Divider Card -->
+      <div class="mt-12 max-w-5xl mx-auto">
+        <div class="flex justify-center -mb-3.5 relative z-10">
+          <span class="bg-espresso-900 text-latte-50 text-xs font-extrabold tracking-[0.2em] uppercase px-6 py-1.5 rounded-full shadow-md border border-gold-400 inline-flex items-center gap-2">
+            <i class="fa-solid fa-paw text-gold-300"></i>
+            <span>OUR WALK PROMISES</span>
+            <i class="fa-solid fa-paw text-gold-300"></i>
+          </span>
+        </div>
+        <div class="bg-latte-50/95 border-2 border-gold-400 rounded-3xl px-4 py-6 sm:py-7 shadow-md grid grid-cols-2 sm:grid-cols-5 gap-4 sm:gap-0 sm:divide-x sm:divide-gold-400/60 text-center">
+          <div class="px-3 flex flex-col items-center justify-center">
+            <div class="w-10 h-10 rounded-full border-2 border-espresso-900 text-espresso-900 flex items-center justify-center mb-2">
+              <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 10.5L12 3l9 7.5" />
+                <path d="M5 9.5V20h14V9.5" />
+                <path d="M12 16.8s-3.2-2.1-3.2-4.2a1.9 1.9 0 0 1 3.2-1.3 1.9 1.9 0 0 1 3.2 1.3c0 2.1-3.2 4.2-3.2 4.2z" fill="currentColor" stroke="none" />
+              </svg>
+            </div>
+            <p class="text-xs sm:text-sm font-extrabold text-espresso-900 leading-snug">Loving &amp;<br>Safe Care</p>
+          </div>
+          <div class="px-3 flex flex-col items-center justify-center">
+            <div class="w-10 h-10 rounded-full border-2 border-espresso-900 text-espresso-900 flex items-center justify-center mb-2">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <p class="text-xs sm:text-sm font-extrabold text-espresso-900 leading-snug">100% Live<br>GPS Pin</p>
+          </div>
+          <div class="px-3 flex flex-col items-center justify-center">
+            <div class="w-10 h-10 rounded-full border-2 border-espresso-900 text-espresso-900 flex items-center justify-center mb-2">
+              <i class="fa-solid fa-dog"></i>
+            </div>
+            <p class="text-xs sm:text-sm font-extrabold text-espresso-900 leading-snug">1-on-1 Only<br>No Pack Walk</p>
+          </div>
+          <div class="px-3 flex flex-col items-center justify-center">
+            <div class="w-10 h-10 rounded-full border-2 border-espresso-900 text-espresso-900 flex items-center justify-center mb-2">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <p class="text-xs sm:text-sm font-extrabold text-espresso-900 leading-snug">15-Min Family<br>Meet &amp; Greet</p>
+          </div>
+          <div class="col-span-2 sm:col-span-1 px-3 flex flex-col items-center justify-center">
+            <div class="w-10 h-10 rounded-full border-2 border-espresso-900 text-espresso-900 flex items-center justify-center mb-2">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <p class="text-xs sm:text-sm font-extrabold text-espresso-900 leading-snug">Photo &amp; Potty<br>Updates</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Step-by-Step + Interactive WhatsApp Tracking Simulator -->
+  <section id="live-tracking" class="py-16 sm:py-20 bg-latte-50 border-b border-gold-400/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="inline-block bg-latte-200 text-espresso-900 border border-gold-400 text-xs font-extrabold uppercase tracking-widest px-3.5 py-1 rounded-full">Complete Peace of Mind</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-espresso-950 mt-2">How Live WhatsApp Tracking Works</h2>
+        <p class="text-espresso-700 mt-3 text-sm sm:text-base">
+          No complicated apps to download. Everything runs seamlessly through WhatsApp right on your phone.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <!-- 4 Steps -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="flex gap-4 p-4 rounded-2xl bg-white border-2 border-gold-400/50 hover:border-espresso-900 transition shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-espresso-900 text-gold-300 font-extrabold flex items-center justify-center shrink-0 border border-gold-400">1</div>
+            <div>
+              <h3 class="font-extrabold text-espresso-950">Lock Your Weekend Time Slot</h3>
+              <p class="text-sm text-espresso-700 mt-1">Pick a Saturday or Sunday 1-hour slot between 3:00 PM &amp; 9:00 PM. Once booked, that slot automatically disappears so your dog receives undivided 1-on-1 attention.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 p-4 rounded-2xl bg-white border-2 border-gold-400/50 hover:border-espresso-900 transition shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-espresso-900 text-gold-300 font-extrabold flex items-center justify-center shrink-0 border border-gold-400">2</div>
+            <div>
+              <h3 class="font-extrabold text-espresso-950">Complimentary 10–15 Min First-Time Meet &amp; Greet</h3>
+              <p class="text-sm text-espresso-700 mt-1">For first-time bookings, let's spend <strong>10–15 relaxed minutes</strong> together with you and your dog before the walk—building warmth, trust, and a family-like bond so your pup feels right at home.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 p-4 rounded-2xl bg-white border-2 border-gold-400/50 hover:border-espresso-900 transition shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-espresso-900 text-gold-300 font-extrabold flex items-center justify-center shrink-0 border border-gold-400">3</div>
+            <div>
+              <h3 class="font-extrabold text-espresso-950">Doorstep Handoff &amp; Live WhatsApp GPS</h3>
+              <p class="text-sm text-espresso-700 mt-1">Once your pup is comfortable, you hand over their leash, water bottle (if needed), and poop bags/scoop, and I immediately share my <strong>WhatsApp Live Location (1 Hour)</strong> in our chat.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 p-4 rounded-2xl bg-white border-2 border-gold-400/50 hover:border-espresso-900 transition shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-espresso-900 text-gold-300 font-extrabold flex items-center justify-center shrink-0 border border-gold-400">4</div>
+            <div>
+              <h3 class="font-extrabold text-espresso-950">Personalised Pace, Hygiene &amp; Safe Drop-Off</h3>
+              <p class="text-sm text-espresso-700 mt-1">Receive mid-walk photo &amp; potty clean-up updates, followed by a safe drop-off at your flat door with paws wiped clean.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive WhatsApp Phone Mockup -->
+        <div class="lg:col-span-6">
+          <div class="max-w-sm mx-auto bg-espresso-950 rounded-[2.2rem] p-3 shadow-2xl border-4 border-gold-400">
+            <div class="bg-[#075E54] text-white px-4 py-3 rounded-t-[1.6rem] flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-full bg-espresso-900 text-gold-300 border border-gold-400 flex items-center justify-center font-bold text-sm">
+                  <i class="fa-solid fa-paw"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-sm leading-tight">Omkar • Paw Buddy Walker</p>
+                  <p class="text-[11px] text-emerald-200">online • sharing live location</p>
+                </div>
+              </div>
+              <span class="bg-white/15 border border-white/25 text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full text-emerald-100">
+                Live Preview
+              </span>
+            </div>
+
+            <div id="wa-chat-feed" class="bg-[#ECE5DD] p-3.5 h-80 overflow-y-auto space-y-3 text-xs">
+              <div class="bg-white rounded-xl p-2.5 shadow-sm max-w-[88%]">
+                <div class="bg-latte-100 rounded-lg h-24 relative overflow-hidden flex items-center justify-center mb-2 border border-gold-400/60">
+                  <div class="text-center">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-whatsapp text-white shadow">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <p class="text-[10px] font-extrabold text-espresso-900 mt-1">Live Location • Shared for 1 hr</p>
+                  </div>
+                </div>
+                <p class="font-bold text-stone-900">Picked up Simba from Fresca J-804! Starting our evening walk now.</p>
+                <span class="text-[10px] text-stone-400 block text-right mt-1">5:02 PM</span>
+              </div>
+
+              <div class="bg-white rounded-xl p-2.5 shadow-sm max-w-[88%]">
+                <p class="text-stone-800 font-medium">Walking gently along the clubhouse garden path. Very happy tail wags today!</p>
+                <span class="text-[10px] text-stone-400 block text-right mt-1">5:18 PM</span>
+              </div>
+            </div>
+
+            <div class="bg-latte-100 p-2.5 rounded-b-[1.6rem] border-t border-gold-400/50">
+              <p class="text-[11px] font-bold text-espresso-900 mb-2 text-center">Interactive Demo — Tap to preview real walk updates:</p>
+              <div class="grid grid-cols-2 gap-1.5">
+                <button type="button" onclick="simulateWhatsAppUpdate('Potty break done & cleaned up!')" class="bg-white hover:bg-latte-50 border border-gold-400/70 text-espresso-900 font-semibold py-1.5 px-2 rounded-lg text-[11px] transition">
+                  + Potty Update
+                </button>
+                <button type="button" onclick="simulateWhatsAppUpdate('Sent a happy photo from the park!')" class="bg-white hover:bg-latte-50 border border-gold-400/70 text-espresso-900 font-semibold py-1.5 px-2 rounded-lg text-[11px] transition">
+                  + Photo Ping
+                </button>
+                <button type="button" onclick="simulateWhatsAppUpdate('Safely dropped back at your flat & paws wiped. Walk complete!')" class="col-span-2 bg-whatsapp hover:bg-green-500 text-white font-extrabold py-2 px-3 rounded-lg text-xs transition flex items-center justify-center gap-1.5 shadow-sm">
+                  <i class="fa-solid fa-check-double"></i> Simulate Safe Drop-Off
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Plans Section -->
+  <section id="packages" class="py-16 sm:py-20 bg-latte-100/80 paw-trail-light-bg border-b border-gold-400/40 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="inline-block bg-espresso-900 text-gold-300 border border-gold-400 text-xs font-extrabold uppercase tracking-widest px-3.5 py-1 rounded-full">Weekend Trial Pricing</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-espresso-950 mt-2">Simple, Neighbour-Friendly Rates</h2>
+        <p class="text-espresso-700 mt-3 text-sm sm:text-base">
+          Start with the <strong>₹99 First-Time Trial Walk</strong> to experience the service. Pay via UPI or Cash right after the walk!
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Plan 1: Trial Special (Highlighted in Deep Espresso + Gold) -->
+        <div class="bg-espresso-900 text-latte-50 rounded-3xl p-7 shadow-2xl relative flex flex-col justify-between ring-4 ring-gold-400">
+          <div class="absolute -top-3.5 left-6 bg-gold-400 text-espresso-950 text-xs font-extrabold px-3.5 py-1 rounded-full shadow">
+            BEST TO TRY ONCE
+          </div>
+          <div>
+            <div class="flex items-center justify-between mt-1">
+              <span class="bg-white/10 text-gold-300 text-xs font-bold px-3 py-1 rounded-full border border-gold-400/40">Intro Offer</span>
+              <span class="text-gold-300 font-extrabold text-sm">30 Mins</span>
+            </div>
+            <h3 class="font-serif text-2xl font-extrabold mt-4 text-white">First-Time Trial Walk</h3>
+            <p class="text-xs text-latte-200 mt-1">Test out our 1-on-1 care &amp; live WhatsApp tracking with zero commitment.</p>
+            <div class="my-5 flex items-baseline gap-2">
+              <span class="font-serif text-4xl font-extrabold text-gold-300">₹99</span>
+              <span class="text-sm text-latte-300 line-through">₹149</span>
+              <span class="text-xs text-latte-200 font-semibold">/ trial walk</span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-latte-100 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-300"></i> Free 10–15 min Meet &amp; Greet bonding</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-300"></i> 30-min gentle society walk</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-300"></i> Live WhatsApp GPS &amp; photo ping</li>
+            </ul>
+          </div>
+          <button type="button" onclick="selectPackage('First-Time Trial Walk - 30 Mins (₹99)')" class="w-full py-3.5 px-4 rounded-xl bg-gold-400 hover:bg-gold-300 text-espresso-950 font-extrabold text-sm shadow-lg transition">
+            Select ₹99 Trial Walk
+          </button>
+        </div>
+
+        <!-- Plan 2 -->
+        <div class="bg-white rounded-3xl p-7 border-2 border-gold-400/70 shadow-sm hover:border-espresso-900 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="bg-latte-100 text-espresso-900 border border-gold-400/60 text-xs font-extrabold px-3 py-1 rounded-full">Standard</span>
+              <span class="text-espresso-800 font-extrabold text-sm">30 Mins</span>
+            </div>
+            <h3 class="font-serif text-2xl font-extrabold text-espresso-950 mt-4">Evening Society Stroll</h3>
+            <p class="text-xs text-espresso-700 mt-1">Great for puppies, small breeds, or relaxed evening sniffing.</p>
+            <div class="my-5 flex items-baseline gap-1">
+              <span class="font-serif text-4xl font-extrabold text-espresso-950">₹149</span>
+              <span class="text-sm text-espresso-700">/ walk</span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-espresso-800 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-600"></i> Doorstep pickup &amp; drop</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-600"></i> Live WhatsApp GPS tracking</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-600"></i> Poo cleanup &amp; paw wipe</li>
+            </ul>
+          </div>
+          <button type="button" onclick="selectPackage('Evening Society Stroll - 30 Mins (₹149)')" class="w-full py-3.5 px-4 rounded-xl bg-espresso-900 hover:bg-espresso-800 text-latte-50 font-bold text-sm transition">
+            Select 30-Min Stroll
+          </button>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="bg-white rounded-3xl p-7 border-2 border-gold-400/70 shadow-sm hover:border-espresso-900 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="bg-latte-200 text-espresso-900 border border-gold-400/60 text-xs font-extrabold px-3 py-1 rounded-full">Active Pups</span>
+              <span class="text-espresso-800 font-extrabold text-sm">45 Mins</span>
+            </div>
+            <h3 class="font-serif text-2xl font-extrabold text-espresso-950 mt-4">Energetic Long Walk</h3>
+            <p class="text-xs text-espresso-700 mt-1">Ideal for Goldens, Labs, Beagles &amp; high-energy dogs needing full exercise.</p>
+            <div class="my-5 flex items-baseline gap-1">
+              <span class="font-serif text-4xl font-extrabold text-espresso-950">₹199</span>
+              <span class="text-sm text-espresso-700">/ walk</span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-espresso-800 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-600"></i> Full 45-min brisk society walk</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-600"></i> Live WhatsApp GPS + Photos</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-600"></i> Fresh water hydration break</li>
+            </ul>
+          </div>
+          <button type="button" onclick="selectPackage('Energetic Long Walk - 45 Mins (₹199)')" class="w-full py-3.5 px-4 rounded-xl bg-espresso-900 hover:bg-espresso-800 text-latte-50 font-bold text-sm transition">
+            Select 45-Min Walk
+          </button>
+        </div>
+      </div>
+
+      <!-- Two-Dog Household / Sibling Discount Callout -->
+      <div class="mt-8 bg-white rounded-3xl p-6 border-2 border-gold-400 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-4 text-left">
+          <div class="w-12 h-12 rounded-2xl bg-espresso-900 text-gold-300 border border-gold-400 flex items-center justify-center text-xl shrink-0">
+            <i class="fa-solid fa-shield-dog"></i>
+          </div>
+          <div>
+            <span class="inline-block bg-latte-200 text-espresso-900 border border-gold-400 text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full">2-Dog Household Friendly</span>
+            <h4 class="font-serif text-lg sm:text-xl font-extrabold text-espresso-950 mt-1">Have Two Dogs? Enjoy 25% OFF on Your Second Pup!</h4>
+            <p class="text-xs sm:text-sm text-espresso-700 mt-0.5">
+              Same household siblings walked safely together (or back-to-back within your slot): <strong>₹173</strong> (Trial), <strong>₹261</strong> (30-Min), or <strong>₹348</strong> (45-Min).
+            </p>
+          </div>
+        </div>
+        <button type="button" onclick="selectTwoDogsMode()" class="w-full sm:w-auto shrink-0 bg-espresso-900 hover:bg-espresso-800 text-latte-50 font-extrabold text-xs sm:text-sm px-5 py-3.5 rounded-xl border border-gold-400 transition shadow">
+          Book for 2 Dogs →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Weekend Slot Picker + Comprehensive Pet Booking Form -->
+  <section id="book-walk" class="py-16 sm:py-24 bg-latte-50 paw-trail-light-bg transition-all duration-300">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="inline-flex items-center gap-2 bg-latte-200 text-espresso-900 border border-gold-400 text-xs font-extrabold uppercase tracking-widest px-3.5 py-1 rounded-full">
+          <span class="w-2 h-2 rounded-full bg-whatsapp"></span>
+          Real-Time Slot Availability
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-espresso-950 mt-2">Book Your Weekend Walk Slot</h2>
+        <p class="text-espresso-700 mt-2 text-sm sm:text-base">
+          Available strictly on <strong>Saturday &amp; Sunday (3:00 PM – 9:00 PM)</strong>. Once a neighbour books a slot, it is immediately removed from this list.
+        </p>
+      </div>
+
+      <form id="booking-form" class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border-2 border-gold-400/80 space-y-8">
+        
+        <!-- STEP 1: Live Weekend Slot Selector -->
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 mb-5 border-b border-gold-400/50">
+            <div class="flex items-center gap-2.5">
+              <span class="w-8 h-8 rounded-xl bg-espresso-900 text-gold-300 border border-gold-400 flex items-center justify-center font-extrabold text-sm">1</span>
+              <h3 class="font-serif text-xl sm:text-2xl font-extrabold text-espresso-950">Choose Weekend Date &amp; 1-Hour Slot</h3>
+            </div>
+
+            <!-- This Weekend vs Next Weekend Toggle -->
+            <div class="inline-flex bg-latte-100 p-1 rounded-xl border border-gold-400/60 self-start">
+              <button type="button" id="btn-this-weekend" onclick="switchWeekendOffset(0)" class="px-3 py-1.5 rounded-lg text-xs font-extrabold bg-espresso-900 text-latte-50 transition">
+                This Weekend
+              </button>
+              <button type="button" id="btn-next-weekend" onclick="switchWeekendOffset(1)" class="px-3 py-1.5 rounded-lg text-xs font-bold text-espresso-700 hover:text-espresso-950 transition">
+                Next Weekend
+              </button>
+            </div>
+          </div>
+
+          <!-- Saturday & Sunday Day Selector Tabs -->
+          <div id="weekend-day-tabs" class="grid grid-cols-2 gap-3 mb-5"></div>
+
+          <!-- Available Slots Header -->
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-extrabold uppercase tracking-wider text-espresso-700">Available Open Slots (3:00 PM – 9:00 PM)</span>
+            <span id="slots-remaining-badge" class="text-xs font-extrabold text-espresso-900 bg-latte-200 border border-gold-400/60 px-2.5 py-1 rounded-full">6 of 6 open</span>
+          </div>
+
+          <!-- Dynamic Slots Grid -->
+          <div id="slots-grid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-3"></div>
+          <input type="hidden" id="selectedSlotKey" value="" />
+          <input type="hidden" id="selectedSlotLabel" value="" />
+        </div>
+
+        <!-- STEP 2: Pet Parent & Flat Details -->
+        <div>
+          <div class="flex items-center gap-2.5 pb-3 mb-5 border-b border-gold-400/50">
+            <span class="w-8 h-8 rounded-xl bg-espresso-900 text-gold-300 border border-gold-400 flex items-center justify-center font-extrabold text-sm">2</span>
+            <h3 class="font-serif text-xl sm:text-2xl font-extrabold text-espresso-950">Pet Parent &amp; Society Flat Details</h3>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Your Full Name *</label>
+              <input type="text" id="ownerName" required placeholder="e.g., Rohan Sharma" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+            </div>
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Pet Parent Gender *</label>
+              <select id="ownerGender" required class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Tower / Wing &amp; Flat No. *</label>
+              <input type="text" id="flatNumber" required placeholder="e.g., Fresca J-804" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+            </div>
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Your WhatsApp Number *</label>
+              <input type="tel" id="ownerWhatsapp" required placeholder="e.g., 9876543210" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Alternate / Emergency Contact</label>
+              <input type="tel" id="emergencyContact" placeholder="e.g., Family member or local vet" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3: Dog Profile (Supports 1 or 2 Dogs) -->
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 mb-5 border-b border-gold-400/50">
+            <div class="flex items-center gap-2.5">
+              <span class="w-8 h-8 rounded-xl bg-espresso-900 text-gold-300 border border-gold-400 flex items-center justify-center font-extrabold text-sm">3</span>
+              <h3 class="font-serif text-xl sm:text-2xl font-extrabold text-espresso-950">Your Dog’s Profile</h3>
+            </div>
+
+            <!-- 1 Dog vs 2 Dogs Selector -->
+            <div class="inline-flex bg-latte-100 p-1 rounded-xl border border-gold-400/60 self-start">
+              <button type="button" id="btn-dog-count-1" onclick="setDogCount(1)" class="px-3.5 py-1.5 rounded-lg text-xs font-extrabold bg-espresso-900 text-latte-50 transition">
+                1 Dog
+              </button>
+              <button type="button" id="btn-dog-count-2" onclick="setDogCount(2)" class="px-3.5 py-1.5 rounded-lg text-xs font-bold text-espresso-800 hover:text-espresso-950 transition flex items-center gap-1.5">
+                <span>2 Dogs</span>
+                <span class="bg-gold-500 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-full">25% OFF 2nd</span>
+              </button>
+            </div>
+            <input type="hidden" id="dogCount" value="1" />
+          </div>
+
+          <!-- Dog 1 Fields -->
+          <p id="dog1-subheading" class="hidden text-xs font-extrabold uppercase tracking-wider text-espresso-900 mb-3">First Dog Details</p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Dog's Name *</label>
+              <input type="text" id="dogName" required placeholder="e.g., Simba" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+            </div>
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Dog's Gender *</label>
+              <select id="dogGender" required class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Breed *</label>
+              <input type="text" id="dogBreed" required placeholder="e.g., Golden Retriever, Beagle, Indie" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+            </div>
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Size &amp; Age *</label>
+              <select id="dogSize" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+                <option value="Puppy (Under 1 yr)">Puppy (Under 1 yr)</option>
+                <option value="Small (Under 10 kg)">Small (Under 10 kg - Shih Tzu, Pug, etc.)</option>
+                <option value="Medium (10-25 kg)" selected>Medium (10–25 kg - Beagle, Indie, Cocker)</option>
+                <option value="Large (25-40 kg)">Large (25–40 kg - Golden Retriever, Lab, GSD)</option>
+                <option value="Giant (40+ kg)">Giant (40+ kg)</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Walking Pace &amp; Energy</label>
+              <select id="energyLevel" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+                <option value="Calm & Slow Sniffer">Calm &amp; Slow Sniffer</option>
+                <option value="Moderate & Steady" selected>Moderate &amp; Steady</option>
+                <option value="High Energy / Playful">High Energy / Playful</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Second Dog Fields (Shown when 2 Dogs is selected) -->
+          <div id="dog2-fields-container" class="hidden mt-6 pt-5 border-t-2 border-dashed border-gold-400/60 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-extrabold uppercase tracking-wider text-gold-600 flex items-center gap-1.5">
+                <i class="fa-solid fa-paw"></i> Second Dog Details (25% Sibling Discount Applied)
+              </span>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Second Dog's Name *</label>
+                <input type="text" id="dog2Name" placeholder="e.g., Coco" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+              </div>
+              <div>
+                <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Second Dog's Gender *</label>
+                <select id="dog2Gender" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Second Dog's Breed *</label>
+                <input type="text" id="dog2Breed" placeholder="e.g., Beagle, Indie, Shih Tzu" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+              </div>
+              <div>
+                <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Size &amp; Age</label>
+                <select id="dog2Size" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+                  <option value="Puppy (Under 1 yr)">Puppy (Under 1 yr)</option>
+                  <option value="Small (Under 10 kg)">Small (Under 10 kg - Shih Tzu, Pug, etc.)</option>
+                  <option value="Medium (10-25 kg)" selected>Medium (10–25 kg - Beagle, Indie, Cocker)</option>
+                  <option value="Large (25-40 kg)">Large (25–40 kg - Golden Retriever, Lab, GSD)</option>
+                  <option value="Giant (40+ kg)">Giant (40+ kg)</option>
+                </select>
+              </div>
+              <div class="sm:col-span-2">
+                <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Walking Pace &amp; Energy</label>
+                <select id="dog2EnergyLevel" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+                  <option value="Calm & Slow Sniffer">Calm &amp; Slow Sniffer</option>
+                  <option value="Moderate & Steady" selected>Moderate &amp; Steady</option>
+                  <option value="High Energy / Playful">High Energy / Playful</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Two-Dog Walking Preference -->
+            <div class="bg-latte-100/80 p-3.5 rounded-2xl border border-gold-400/60">
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-950 mb-1.5">How would you like both dogs walked?</label>
+              <select id="twoDogWalkStyle" class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-gold-400 text-xs sm:text-sm font-semibold text-espresso-900 outline-none">
+                <option value="Walk both dogs together (comfortable walking side-by-side)">Walk both dogs together (comfortable walking side-by-side)</option>
+                <option value="Walk one after another (15–20 mins each within the 1-hr slot)">Walk one after another (15–20 mins each within the 1-hr slot)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 4: Behavioural & Leash Instincts -->
+        <div>
+          <div class="flex items-center gap-2.5 pb-3 mb-4 border-b border-gold-400/50">
+            <span class="w-8 h-8 rounded-xl bg-espresso-900 text-gold-300 border border-gold-400 flex items-center justify-center font-extrabold text-sm">4</span>
+            <h3 class="font-serif text-xl sm:text-2xl font-extrabold text-espresso-950">Behaviour &amp; Leash Habits (Select all that apply)</h3>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="flex items-center gap-3 p-3.5 rounded-2xl bg-latte-50 border-2 border-gold-400/50 cursor-pointer hover:border-espresso-900 transition">
+              <input type="checkbox" name="behavior" value="Pulls on the leash" class="w-4 h-4 accent-espresso-900 rounded">
+              <span class="text-sm font-semibold text-espresso-900">Pulls strongly on the leash</span>
+            </label>
+            <label class="flex items-center gap-3 p-3.5 rounded-2xl bg-latte-50 border-2 border-gold-400/50 cursor-pointer hover:border-espresso-900 transition">
+              <input type="checkbox" name="behavior" value="Reactive to other dogs" class="w-4 h-4 accent-espresso-900 rounded">
+              <span class="text-sm font-semibold text-espresso-900">Reactive / barks at other dogs</span>
+            </label>
+            <label class="flex items-center gap-3 p-3.5 rounded-2xl bg-latte-50 border-2 border-gold-400/50 cursor-pointer hover:border-espresso-900 transition">
+              <input type="checkbox" name="behavior" value="Friendly with strangers & kids" class="w-4 h-4 accent-espresso-900 rounded">
+              <span class="text-sm font-semibold text-espresso-900">Friendly with strangers &amp; kids</span>
+            </label>
+            <label class="flex items-center gap-3 p-3.5 rounded-2xl bg-latte-50 border-2 border-gold-400/50 cursor-pointer hover:border-espresso-900 transition">
+              <input type="checkbox" name="behavior" value="Uses body harness only" class="w-4 h-4 accent-espresso-900 rounded">
+              <span class="text-sm font-semibold text-espresso-900">Uses body harness only (no collar pull)</span>
+            </label>
+            <label class="flex items-center gap-3 p-3.5 rounded-2xl bg-latte-50 border-2 border-gold-400/50 cursor-pointer hover:border-espresso-900 transition">
+              <input type="checkbox" name="behavior" value="Scared of loud noises/bikes" class="w-4 h-4 accent-espresso-900 rounded">
+              <span class="text-sm font-semibold text-espresso-900">Shy / scared of loud noises or bikes</span>
+            </label>
+            <label class="flex items-center gap-3 p-3.5 rounded-2xl bg-latte-50 border-2 border-gold-400/50 cursor-pointer hover:border-espresso-900 transition">
+              <input type="checkbox" name="behavior" value="Tries to eat items off ground" class="w-4 h-4 accent-espresso-900 rounded">
+              <span class="text-sm font-semibold text-espresso-900">Tries to sniff/eat items off ground</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- STEP 5: Package, Allergies & Special Instructions -->
+        <div>
+          <div class="flex items-center gap-2.5 pb-3 mb-5 border-b border-gold-400/50">
+            <span class="w-8 h-8 rounded-xl bg-espresso-900 text-gold-300 border border-gold-400 flex items-center justify-center font-extrabold text-sm">5</span>
+            <h3 class="font-serif text-xl sm:text-2xl font-extrabold text-espresso-950">Walk Plan, Allergies &amp; Special Instructions</h3>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Selected Walk Plan *</label>
+              <select id="selectedPackage" onchange="updateTotalPriceDisplay()" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-bold text-espresso-950">
+                <option value="First-Time Trial Walk - 30 Mins" data-base-price="99" selected>First-Time Trial Walk - 30 Mins (₹99 / 1 dog)</option>
+                <option value="Evening Society Stroll - 30 Mins" data-base-price="149">Evening Society Stroll - 30 Mins (₹149 / 1 dog)</option>
+                <option value="Energetic Long Walk - 45 Mins" data-base-price="199">Energetic Long Walk - 45 Mins (₹199 / 1 dog)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Food Allergies / Treat Notes</label>
+              <input type="text" id="allergies" placeholder="e.g., No chicken treats, or None" class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+            </div>
+          </div>
+
+          <!-- Live Charges Summary Box (1 Dog vs 2 Dogs) -->
+          <div class="mb-4 rounded-2xl bg-espresso-900 text-latte-50 p-4 sm:p-5 border-2 border-gold-400 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <span class="text-[11px] font-extrabold uppercase tracking-wider text-gold-300 block">Estimated Walk Charges (Pay After Walk)</span>
+              <p id="price-breakdown-text" class="text-xs sm:text-sm text-latte-100 mt-0.5">1 Dog • Standard single-dog rate</p>
+            </div>
+            <div class="text-left sm:text-right">
+              <span id="calculated-total-price" class="font-serif text-3xl sm:text-4xl font-extrabold text-gold-300">₹99</span>
+              <span class="block text-[11px] text-latte-200">UPI / Cash after walk</span>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <!-- Preferred Walking Area / Navigation Guidance -->
+            <div class="rounded-2xl bg-latte-100/80 border-2 border-gold-400/70 p-4 sm:p-5 space-y-3">
+              <div class="flex items-start justify-between gap-3">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-8 h-8 rounded-xl bg-espresso-900 text-gold-300 border border-gold-400 flex items-center justify-center text-sm shrink-0">
+                    <i class="fa-solid fa-route"></i>
+                  </span>
+                  <div>
+                    <label for="preferredRoute" class="block text-xs sm:text-sm font-extrabold uppercase tracking-wide text-espresso-950">
+                      Preferred Walking Area &amp; Navigation (Optional)
+                    </label>
+                    <p class="text-[11px] sm:text-xs text-espresso-700">
+                      Let us know if you prefer keeping the walk right near your residential building, within a 1 to 1.5 km radius, or guiding us via WhatsApp.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Walking Area Preset Pills -->
+              <div class="flex flex-wrap gap-2">
+                <button type="button" onclick="setWalkingRoute('Strictly near the residential building & podium')" class="text-xs font-bold bg-white hover:bg-espresso-900 hover:text-latte-50 text-espresso-900 border border-gold-400 px-3 py-1.5 rounded-full transition shadow-sm">
+                  + Near Residential Building
+                </button>
+                <button type="button" onclick="setWalkingRoute('Within 1 to 1.5 km radius of the residential building')" class="text-xs font-bold bg-white hover:bg-espresso-900 hover:text-latte-50 text-espresso-900 border border-gold-400 px-3 py-1.5 rounded-full transition shadow-sm">
+                  + Within 1 – 1.5 km Radius
+                </button>
+                <button type="button" onclick="setWalkingRoute('Society garden & quiet walking track only')" class="text-xs font-bold bg-white hover:bg-espresso-900 hover:text-latte-50 text-espresso-900 border border-gold-400 px-3 py-1.5 rounded-full transition shadow-sm">
+                  + Society Garden &amp; Track
+                </button>
+                <button type="button" onclick="setWalkingRoute('Will guide route live on WhatsApp during walk')" class="text-xs font-bold bg-whatsapp/15 hover:bg-whatsapp hover:text-white text-espresso-950 border border-whatsapp/40 px-3 py-1.5 rounded-full transition">
+                  <i class="fa-brands fa-whatsapp mr-1"></i> Guide Live on WhatsApp
+                </button>
+              </div>
+
+              <input type="text" id="preferredRoute" placeholder="e.g., Stay near Fresca wing, walk within 1 to 1.5 km radius of our building, or guide via WhatsApp..." class="w-full px-4 py-3 rounded-xl bg-white border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium">
+            </div>
+
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wide text-espresso-800 mb-1.5">Personalised Care Instructions (e.g., Be gentle, where leash is kept)</label>
+              <textarea id="specialNotes" rows="3" placeholder="e.g., Please be gentle while putting on the harness. Leash, water bottle, and poop bags are kept right beside the main door." class="w-full px-4 py-3 rounded-xl bg-latte-50 border-2 border-gold-400/60 focus:border-espresso-900 outline-none text-sm font-medium"></textarea>
+            </div>
+
+            <!-- Quick Doorstep Handoff Checklist (Water & Potty Clean-Up Supplies) -->
+            <div class="rounded-2xl bg-espresso-900 text-latte-50 p-5 sm:p-6 border-2 border-gold-400 shadow-md">
+              <div class="flex items-center gap-2.5 mb-3">
+                <span class="w-8 h-8 rounded-xl bg-gold-400 text-espresso-950 flex items-center justify-center text-sm shrink-0">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </span>
+                <div>
+                  <h4 class="font-serif text-lg sm:text-xl font-extrabold text-white leading-tight">Quick Doorstep Handoff Checklist</h4>
+                  <p class="text-xs text-gold-300">For your pup's personal hygiene &amp; society cleanliness</p>
+                </div>
+              </div>
+
+              <ul class="space-y-2.5 text-xs sm:text-sm text-latte-100 mt-3">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-circle-check text-gold-300 mt-0.5 shrink-0"></i>
+                  <span><strong class="text-white">Leash &amp; Harness:</strong> Fitted securely before pickup at your flat door.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-circle-check text-gold-300 mt-0.5 shrink-0"></i>
+                  <span><strong class="text-white">Water Bottle / Bowl:</strong> If your pup requires water during the walk, please hand over their personal bottle/bowl at pickup.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-circle-check text-gold-300 mt-0.5 shrink-0"></i>
+                  <span><strong class="text-white">Potty Clean-Up Kit:</strong> Please provide poop bags / scoop at pickup—we keep our society spotless and always clean up after your pup.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-2.5">
+              <label class="flex items-start gap-3 p-3.5 rounded-2xl bg-latte-100/90 border-2 border-gold-400/70 cursor-pointer hover:border-espresso-900 transition">
+                <input type="checkbox" id="firstMeetRequested" checked class="w-4 h-4 mt-0.5 accent-espresso-900 rounded">
+                <span class="text-xs sm:text-sm font-bold text-espresso-950">
+                  First-Time Family Bonding (10–15 Mins): I'd love a brief 10–15 minute introduction with Omkar and my dog before our first walk so they feel comfortable like family.
+                </span>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-2xl bg-latte-50 border-2 border-gold-400/70 cursor-pointer hover:border-espresso-900 transition">
+                <input type="checkbox" id="handoffConfirmed" required class="w-4 h-4 mt-0.5 accent-espresso-900 rounded">
+                <span class="text-xs sm:text-sm font-bold text-espresso-950">
+                  I'll keep my dog's leash, water bottle (if needed), and poop bags/scoop ready at pickup. *
+                </span>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-2xl bg-latte-50 border border-gold-400/60 cursor-pointer">
+                <input type="checkbox" id="vaccinated" required checked class="w-4 h-4 mt-0.5 accent-espresso-900 rounded">
+                <span class="text-xs sm:text-sm font-medium text-espresso-800">
+                  I confirm my dog's vaccinations are up to date for safe walks inside our society.
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pt-2">
+          <button type="submit" id="submit-booking-btn" class="w-full bg-whatsapp hover:bg-green-500 text-white font-extrabold py-4 px-6 rounded-2xl shadow-xl shadow-whatsapp/25 transition flex items-center justify-center gap-3 text-base sm:text-lg">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span>Lock Slot &amp; Send Booking on WhatsApp</span>
+          </button>
+          <p class="text-center text-xs text-espresso-700 mt-3">
+            No advance payment required. Pay via UPI or Cash after the walk is completed.
+          </p>
+
+          <!-- Star-Marked Friendly Walker Note -->
+          <div class="mt-4 pt-3 border-t border-gold-400/40 text-center">
+            <p class="inline-flex items-center gap-1.5 text-xs font-bold text-espresso-900 bg-latte-100 px-4 py-1.5 rounded-full border border-gold-400">
+              <span class="text-gold-600 font-extrabold">★</span>
+              <span>A friendly neighbour dog walker — building trust like family, one joyful stroll at a time.</span>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-espresso-950 text-latte-200 py-10 border-t-2 border-gold-400/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div class="flex items-center gap-2.5 text-white font-serif font-extrabold text-xl">
+        <i class="fa-solid fa-paw text-gold-300"></i> Paw Buddy
+      </div>
+      <p class="text-center">
+        Weekend Dog Walking (Sat &amp; Sun, 3 PM – 9 PM) • Live WhatsApp GPS Tracking • <span class="text-gold-300 font-semibold">★ Friendly Neighbour Dog Walker</span>
+      </p>
+      <div class="flex items-center gap-5">
+        <button type="button" onclick="openWalkerProfileModal()" class="hover:text-gold-300 transition">Meet Your Walker</button>
+        <a href="#packages" class="hover:text-gold-300 transition">Rates</a>
+        <a href="#book-walk" class="hover:text-gold-300 transition">Book Slot</a>
+        <button type="button" onclick="openAdminPinModal()" class="text-latte-300/60 hover:text-gold-300 transition flex items-center gap-1" title="Admin Access">
+          <i class="fa-solid fa-lock text-[10px]"></i>
+          <span>Admin</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Admin PIN Unlock Modal -->
+  <div id="admin-pin-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-espresso-950/80 backdrop-blur-sm p-4">
+    <div class="bg-latte-50 rounded-3xl max-w-sm w-full p-6 sm:p-7 shadow-2xl border-2 border-gold-400 text-center relative">
+      <button type="button" onclick="closeAdminPinModal()" aria-label="Close Admin PIN" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-latte-200 hover:bg-latte-300 text-espresso-900 flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="w-12 h-12 rounded-2xl bg-espresso-900 text-gold-300 border border-gold-400 flex items-center justify-center mx-auto mb-3 shadow">
+        <i class="fa-solid fa-shield-halved text-lg"></i>
+      </div>
+
+      <h3 class="font-serif text-2xl font-extrabold text-espresso-950">Admin Verification</h3>
+      <p class="text-xs text-espresso-700 mt-1">
+        Enter your 10-digit Admin PIN to manage your WhatsApp number, booked slots, and Day-1 Excel/CSV ledger.
+      </p>
+
+      <form onsubmit="verifyAdminPin(event)" class="mt-5 space-y-3">
+        <input
+          type="password"
+          id="adminPinInput"
+          inputmode="numeric"
+          maxlength="10"
+          required
+          placeholder="••••••••••"
+          class="w-full text-center tracking-[0.3em] text-lg font-extrabold px-4 py-3 rounded-2xl bg-white border-2 border-gold-400 focus:border-espresso-900 outline-none text-espresso-950"
+        />
+        <p id="admin-pin-error" class="hidden text-xs font-bold text-red-600">Incorrect 10-digit PIN. Please try again.</p>
+        <button type="submit" class="w-full bg-espresso-900 hover:bg-espresso-800 text-latte-50 font-extrabold py-3 px-5 rounded-2xl border border-gold-400 shadow-md transition text-sm">
+          Unlock Walker Desk
+        </button>
+      </form>
+      <p class="text-[11px] text-espresso-600 mt-3">Default 10-digit PIN: <span class="font-bold">8040804080</span> (can be changed inside once unlocked)</p>
+    </div>
+  </div>
+
+  <!-- Meet Your Walker Profile Modal (Omkar Jangam) -->
+  <div id="walker-profile-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-espresso-950/80 backdrop-blur-sm p-4">
+    <div class="bg-latte-50 rounded-[2rem] max-w-md w-full p-6 sm:p-8 shadow-2xl border-4 border-gold-400 relative text-center max-h-[92vh] overflow-y-auto">
+      <button type="button" onclick="closeWalkerProfileModal()" aria-label="Close Walker Profile" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-latte-200 hover:bg-latte-300 text-espresso-950 flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Circular Avatar Frame -->
+      <div class="relative w-32 h-32 mx-auto mt-1 mb-4">
+        <div class="w-full h-full rounded-full overflow-hidden border-4 border-espresso-900 shadow-xl bg-latte-100 flex items-center justify-center">
+          <img id="walker-profile-photo-img" src="" alt="Omkar Jangam" class="w-full h-full object-cover hidden" />
+          <!-- Clean Illustrated Fallback Avatar until Omkar uploads his photo -->
+          <div id="walker-profile-photo-fallback" class="w-full h-full bg-gradient-to-br from-espresso-900 to-espresso-700 text-white flex flex-col items-center justify-center p-2">
+            <svg viewBox="0 0 120 120" class="w-24 h-24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="56" fill="#53321D"/>
+              <!-- Friendly Walker Silhouette -->
+              <circle cx="52" cy="42" r="16" fill="#F6D5B8"/>
+              <path d="M36 40C36 28 44 23 53 23C62 23 68 29 68 39C64 34 57 32 49 33C42 34 38 37 36 40Z" fill="#27150B"/>
+              <path d="M26 94C26 75 37 64 52 64C67 64 78 75 78 94" fill="#C99E67"/>
+              <!-- Happy Pup Beside Him -->
+              <circle cx="85" cy="66" r="13" fill="#E6A15C"/>
+              <ellipse cx="75" cy="65" rx="4" ry="8" fill="#B87333"/>
+              <ellipse cx="95" cy="65" rx="4" ry="8" fill="#B87333"/>
+              <circle cx="81" cy="64" r="1.8" fill="#27150B"/>
+              <circle cx="89" cy="64" r="1.8" fill="#27150B"/>
+              <circle cx="85" cy="69" r="2.5" fill="#27150B"/>
+              <path d="M68 94C68 82 75 76 85 76C95 76 102 82 102 94" fill="#E6A15C"/>
+            </svg>
+          </div>
+        </div>
+        <span class="absolute bottom-1 right-1 w-8 h-8 rounded-full bg-whatsapp text-white border-2 border-latte-50 flex items-center justify-center shadow" title="Verified Society Resident">
+          <i class="fa-solid fa-check text-xs"></i>
+        </span>
+      </div>
+
+      <h3 class="font-serif text-3xl sm:text-4xl font-extrabold text-espresso-950">Omkar Jangam</h3>
+
+      <div class="inline-block bg-espresso-900 text-latte-50 border border-gold-400 text-xs font-bold px-4 py-1.5 rounded-full mt-2 shadow-sm">
+        Age 29 • Resident of Fresca J804 • Verified Neighbour
+      </div>
+
+      <p class="text-sm text-espresso-800 leading-relaxed mt-4 px-1">
+        Namaste neighbours! I’m Omkar from <strong class="text-espresso-950">Fresca J804</strong>. As a lifelong dog lover right here in our society, I treat every pup like my own family—keeping them safe, happy, and active with live WhatsApp location tracking on every stroll. I carry your pup’s essentials safely and strictly follow society hygiene rules—always cleaning up after every walk.
+      </p>
+
+      <!-- 3 Trust Pills -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mt-5">
+        <span class="text-xs font-extrabold bg-white border border-gold-400 text-espresso-900 px-3 py-1.5 rounded-full shadow-sm">
+          100% Live Location
+        </span>
+        <span class="text-xs font-extrabold bg-white border border-gold-400 text-espresso-900 px-3 py-1.5 rounded-full shadow-sm">
+          1-on-1 Attention
+        </span>
+        <span class="text-xs font-extrabold bg-white border border-gold-400 text-espresso-900 px-3 py-1.5 rounded-full shadow-sm">
+          Fellow Resident
+        </span>
+      </div>
+
+      <button type="button" onclick="bookWithOmkarFromProfile()" class="w-full mt-6 bg-espresso-900 hover:bg-espresso-800 text-latte-50 border border-gold-400 font-extrabold py-3.5 px-6 rounded-2xl shadow-lg transition text-sm sm:text-base flex items-center justify-center gap-2">
+        <span>Book a Walk with Omkar</span>
+        <i class="fa-solid fa-paw text-gold-300"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Booking Confirmation & Clean WhatsApp Launch Modal -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-espresso-950/75 backdrop-blur-sm p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border-2 border-gold-400 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-4 border-b border-gold-400/50">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-latte-100 text-espresso-900 border border-gold-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-calendar-check"></i>
+          </span>
+          <div>
+            <h3 class="font-serif text-2xl font-extrabold text-espresso-950">Slot Locked!</h3>
+            <p class="text-xs text-espresso-700 font-bold" id="modal-locked-slot-badge">Reserved exclusively for your pup</p>
+          </div>
+        </div>
+        <button type="button" onclick="closeBookingModal()" class="w-8 h-8 rounded-full bg-latte-100 hover:bg-latte-200 text-espresso-800 flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <p class="text-sm text-espresso-700 mt-4">
+        Your time slot is now locked so nobody else can take it. Tap the green WhatsApp button below to send your pet's details directly to Omkar!
+      </p>
+
+      <!-- Formatted Message Preview -->
+      <div class="mt-4 bg-latte-50 border-2 border-gold-400/70 rounded-2xl p-4">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-[11px] font-extrabold uppercase tracking-wider text-espresso-700">WhatsApp Message Preview</span>
+          <button type="button" onclick="copyBookingText()" class="text-xs font-extrabold text-espresso-900 hover:text-gold-600 flex items-center gap-1">
+            <i class="fa-regular fa-copy"></i> Copy Text
+          </button>
+        </div>
+        <pre id="whatsapp-preview-text" class="whitespace-pre-wrap font-sans text-xs text-espresso-950 leading-relaxed"></pre>
+      </div>
+
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <a id="whatsapp-send-link" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 bg-whatsapp hover:bg-green-500 text-white font-extrabold py-3.5 px-5 rounded-2xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span>Open WhatsApp &amp; Send</span>
+        </a>
+        <button type="button" onclick="closeBookingModal()" class="py-3.5 px-5 rounded-2xl bg-latte-100 hover:bg-latte-200 border border-gold-400/60 text-espresso-900 font-bold text-sm transition">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Walker Desk Modal (View Booked Slots, Re-open Cancelled Slots, Configure WhatsApp Number) -->
+  <div id="walker-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-espresso-950/75 backdrop-blur-sm p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border-2 border-gold-400 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-4 border-b border-gold-400/50">
+        <div>
+          <h3 class="font-serif text-2xl font-extrabold text-espresso-950">Admin Walker Desk</h3>
+          <p class="text-xs text-espresso-700 mt-0.5">Protected admin controls for your WhatsApp number, slots, and consolidated data.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="lockAdminDesk()" class="bg-latte-100 hover:bg-latte-200 border border-gold-400/70 text-espresso-900 font-bold text-xs px-3 py-2 rounded-xl transition flex items-center gap-1.5" title="Lock Admin Desk">
+            <i class="fa-solid fa-lock text-gold-600"></i>
+            <span>Lock</span>
+          </button>
+          <button type="button" onclick="closeWalkerModal()" class="w-8 h-8 rounded-full bg-latte-100 hover:bg-latte-200 text-espresso-800 flex items-center justify-center">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Walker WhatsApp Number Setup -->
+      <div class="mt-5 bg-latte-100/80 p-4 rounded-2xl border border-gold-400/70">
+        <label class="block text-xs font-extrabold uppercase tracking-wider text-espresso-900 mb-1.5">
+          Your WhatsApp Number (with 91 country code, e.g., 919876543210)
+        </label>
+        <div class="flex flex-col sm:flex-row gap-2">
+          <input type="text" id="walkerPhoneInput" placeholder="e.g., 919876543210" class="flex-1 px-3.5 py-2.5 rounded-xl bg-white border border-gold-400 text-sm font-semibold">
+          <button type="button" onclick="saveWalkerPhone()" class="bg-espresso-900 hover:bg-espresso-800 text-latte-50 font-bold px-5 py-2.5 rounded-xl text-xs transition">
+            Save &amp; Lock Number
+          </button>
+        </div>
+        <p class="text-[11px] text-espresso-700 mt-1.5">
+          Saved securely in your cloud settings—every neighbour's booking automatically routes to this WhatsApp number.
+        </p>
+      </div>
+
+      <!-- Change Admin PIN -->
+      <div class="mt-4 bg-latte-100/80 p-4 rounded-2xl border border-gold-400/70">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+          <div>
+            <label class="block text-xs font-extrabold uppercase tracking-wider text-espresso-900">
+              Admin Desk Secret 10-Digit PIN
+            </label>
+            <p class="text-[11px] text-espresso-700 mt-0.5">Update your 10-digit PIN anytime so only you can open this desk.</p>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <input type="password" id="newAdminPinInput" inputmode="numeric" maxlength="10" placeholder="10-digit PIN" class="w-36 px-3 py-2 rounded-xl bg-white border border-gold-400 text-xs font-bold text-center tracking-widest">
+            <button type="button" onclick="updateAdminPin()" class="bg-espresso-900 hover:bg-espresso-800 text-latte-50 font-bold px-3.5 py-2 rounded-xl text-xs transition">
+              Update PIN
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Walker Profile Photo Uploader -->
+      <div class="mt-4 bg-latte-100/80 p-4 rounded-2xl border border-gold-400/70">
+        <div class="flex items-center justify-between gap-3">
+          <div>
+            <label class="block text-xs font-extrabold uppercase tracking-wider text-espresso-900">
+              "Meet Your Walker" Profile Photo
+            </label>
+            <p class="text-[11px] text-espresso-700 mt-0.5">Upload your photo anytime—it immediately updates your profile popup for neighbours.</p>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <label class="cursor-pointer bg-espresso-900 hover:bg-espresso-800 text-latte-50 font-bold px-3.5 py-2 rounded-xl text-xs transition shadow-sm border border-gold-400">
+              <i class="fa-solid fa-camera mr-1 text-gold-300"></i> Upload Photo
+              <input type="file" id="walkerPhotoFileInput" accept="image/*" onchange="handleWalkerPhotoUpload(event)" class="hidden">
+            </label>
+            <button type="button" onclick="clearWalkerPhoto()" class="bg-white hover:bg-latte-50 border border-gold-400 text-espresso-800 font-bold px-2.5 py-2 rounded-xl text-xs transition" title="Reset to default avatar">
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- List of Locked / Booked Slots -->
+      <div class="mt-6">
+        <div class="flex items-center justify-between mb-3">
+          <h4 class="text-xs font-extrabold uppercase tracking-wider text-espresso-800">Active Locked Weekend Slots</h4>
+          <span id="walker-booked-total" class="text-xs font-bold text-gold-600">0 active</span>
+        </div>
+        <div id="walker-bookings-list" class="space-y-3 max-h-56 overflow-y-auto pr-1">
+          <!-- Populated dynamically from Firestore -->
+        </div>
+      </div>
+
+      <!-- Consolidated Day-1 to Present Booking Database & Excel/CSV Export -->
+      <div class="mt-6 pt-5 border-t-2 border-gold-400/60">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+          <div>
+            <h4 class="text-xs font-extrabold uppercase tracking-wider text-espresso-950 flex items-center gap-1.5">
+              <i class="fa-solid fa-database text-gold-600"></i>
+              <span>Consolidated Master Database (Day 1 to Today)</span>
+            </h4>
+            <p class="text-[11px] text-espresso-700 mt-0.5">
+              Permanent history of every walk booked—remains saved even after you re-open weekend slots.
+            </p>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <span id="master-history-total" class="text-xs font-extrabold bg-latte-200 text-espresso-900 border border-gold-400 px-2.5 py-1 rounded-full">0 total</span>
+            <button type="button" onclick="exportConsolidatedCSV()" class="bg-espresso-900 hover:bg-espresso-800 text-latte-50 font-extrabold text-xs px-3.5 py-2 rounded-xl border border-gold-400 shadow-sm transition flex items-center gap-1.5">
+              <i class="fa-solid fa-file-excel text-gold-300"></i>
+              <span>Download Excel / CSV</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="master-history-list" class="space-y-2.5 max-h-64 overflow-y-auto pr-1">
+          <!-- Populated dynamically from permanent booking_history collection -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase + Application Script -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { getFirestore, doc, setDoc, deleteDoc, onSnapshot, collection } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    // Weekend 1-hour slots strictly between 3:00 PM and 9:00 PM
+    const WEEKEND_TIME_SLOTS = [
+      { id: '15:00', label: '3:00 PM – 4:00 PM', tag: 'Afternoon Breeze' },
+      { id: '16:00', label: '4:00 PM – 5:00 PM', tag: 'Golden Hour' },
+      { id: '17:00', label: '5:00 PM – 6:00 PM', tag: 'Most Popular' },
+      { id: '18:00', label: '6:00 PM – 7:00 PM', tag: 'Evening Stroll' },
+      { id: '19:00', label: '7:00 PM – 8:00 PM', tag: 'Post-Dinner' },
+      { id: '20:00', label: '8:00 PM – 9:00 PM', tag: 'Night Walk' }
+    ];
+
+    const WALKER_PHONE_KEY = 'pawsteps_walker_phone_v2';
+    const WALKER_PHOTO_KEY = 'pawsteps_walker_photo_v1';
+    const DEFAULT_ADMIN_PIN = '8040804080';
+    let weekendOffset = 0; // 0 = upcoming Sat/Sun, 1 = next weekend Sat/Sun
+    let selectedDayIndex = 0; // 0 = Saturday, 1 = Sunday
+    let bookedSlotsMap = {}; // { 'YYYY-MM-DD_17:00': bookingData }
+    let masterHistoryMap = {}; // Permanent Day-1 to Today archive { 'bookingId': bookingData }
+    let adminConfig = {
+      walkerPhone: localStorage.getItem(WALKER_PHONE_KEY) || '',
+      adminPin: DEFAULT_ADMIN_PIN
+    };
+    let isAdminUnlocked = false;
+    let logoTapCount = 0;
+    let logoTapTimer = null;
+    let currentFormattedMessage = '';
+    let db = null;
+    let currentUser = null;
+    const appId = typeof __app_id !== 'undefined' ? __app_id : 'pawsteps-community-app';
+
+    // Clean UTF-8 Emojis built from Unicode code points (prevents question-mark corruption)
+    const EMOJI = {
+      paw: String.fromCodePoint(0x1F43E),
+      person: String.fromCodePoint(0x1F9D1),
+      house: String.fromCodePoint(0x1F3E0),
+      phone: String.fromCodePoint(0x1F4F1),
+      sos: String.fromCodePoint(0x1F198),
+      dog: String.fromCodePoint(0x1F415),
+      ruler: String.fromCodePoint(0x1F4CF),
+      bolt: String.fromCodePoint(0x26A1),
+      clipboard: String.fromCodePoint(0x1F4CB),
+      noEntry: String.fromCodePoint(0x1F6AB),
+      memo: String.fromCodePoint(0x1F4DD),
+      calendar: String.fromCodePoint(0x1F4C5),
+      clock: String.fromCodePoint(0x23F0),
+      check: String.fromCodePoint(0x2705),
+      pin: String.fromCodePoint(0x1F4CD),
+      route: String.fromCodePoint(0x1F6E4)
+    };
+
+    // Initialize Firebase Cloud Sync for real-time slot locking across visitors
+    async function initCloudSync() {
+      try {
+        if (typeof __firebase_config !== 'undefined' && __firebase_config) {
+          const firebaseConfig = JSON.parse(__firebase_config);
+          const app = initializeApp(firebaseConfig);
+          const auth = getAuth(app);
+          db = getFirestore(app);
+
+          if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+            await signInWithCustomToken(auth, __initial_auth_token);
+          } else {
+            await signInAnonymously(auth);
+          }
+
+          onAuthStateChanged(auth, (user) => {
+            currentUser = user;
+            if (user && db) {
+              subscribeToAdminConfig();
+              subscribeToBookedSlots();
+              subscribeToMasterHistory();
+            }
+          });
+        } else {
+          loadLocalFallbackBookings();
+        }
+      } catch (err) {
+        console.warn("Cloud sync fallback active:", err);
+        loadLocalFallbackBookings();
+      }
+    }
+
+    function subscribeToAdminConfig() {
+      const configRef = doc(db, 'artifacts', appId, 'public', 'data', 'admin_settings', 'walker_config');
+      onSnapshot(configRef, (docSnap) => {
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          if (data.walkerPhone !== undefined) {
+            adminConfig.walkerPhone = data.walkerPhone;
+            localStorage.setItem(WALKER_PHONE_KEY, data.walkerPhone);
+          }
+          if (data.adminPin) {
+            adminConfig.adminPin = String(data.adminPin);
+          }
+          const phoneInput = document.getElementById('walkerPhoneInput');
+          if (phoneInput && isAdminUnlocked) {
+            phoneInput.value = adminConfig.walkerPhone;
+          }
+        }
+      }, (error) => {
+        console.error("Admin config snapshot error:", error);
+      });
+    }
+
+    function subscribeToBookedSlots() {
+      const slotsCol = collection(db, 'artifacts', appId, 'public', 'data', 'booked_slots');
+      onSnapshot(slotsCol, (snapshot) => {
+        const updated = {};
+        snapshot.forEach((docSnap) => {
+          updated[docSnap.id] = docSnap.data();
+        });
+        bookedSlotsMap = updated;
+        renderWeekendUI();
+        renderWalkerBookingsList();
+      }, (error) => {
+        console.error("Snapshot error:", error);
+        loadLocalFallbackBookings();
+      });
+    }
+
+    function subscribeToMasterHistory() {
+      const historyCol = collection(db, 'artifacts', appId, 'public', 'data', 'booking_history');
+      onSnapshot(historyCol, (snapshot) => {
+        const updatedHistory = {};
+        snapshot.forEach((docSnap) => {
+          updatedHistory[docSnap.id] = docSnap.data();
+        });
+        masterHistoryMap = updatedHistory;
+        renderMasterHistoryList();
+      }, (error) => {
+        console.error("Master history snapshot error:", error);
+      });
+    }
+
+    function loadLocalFallbackBookings() {
+      bookedSlotsMap = {};
+      masterHistoryMap = {};
+      renderWeekendUI();
+      renderWalkerBookingsList();
+      renderMasterHistoryList();
+    }
+
+    // Calculate upcoming Saturday & Sunday dates
+    function getWeekendDates(offsetWeeks = 0) {
+      const now = new Date();
+      const dayOfWeek = now.getDay(); // 0 = Sun, 6 = Sat
+      let daysUntilSat = (6 - dayOfWeek + 7) % 7;
+
+      // If today is Sunday, keep current weekend active when offsetWeeks === 0
+      const satDate = new Date(now);
+      if (dayOfWeek === 0 && offsetWeeks === 0) {
+        satDate.setDate(now.getDate() - 1);
+      } else {
+        satDate.setDate(now.getDate() + daysUntilSat + offsetWeeks * 7);
+      }
+
+      const sunDate = new Date(satDate);
+      sunDate.setDate(satDate.getDate() + 1);
+
+      const formatDay = (dateObj, dayName) => {
+        const yyyy = dateObj.getFullYear();
+        const mm = String(dateObj.getMonth() + 1).padStart(2, '0');
+        const dd = String(dateObj.getDate()).padStart(2, '0');
+        const iso = `${yyyy}-${mm}-${dd}`;
+        const readable = dateObj.toLocaleDateString('en-IN', { day: 'numeric', month: 'short' });
+        return { dayName, iso, readable, fullLabel: `${dayName}, ${readable}` };
+      };
+
+      return [formatDay(satDate, 'Saturday'), formatDay(sunDate, 'Sunday')];
+    }
+
+    window.switchWeekendOffset = function(offset) {
+      weekendOffset = offset;
+      selectedDayIndex = 0;
+
+      const btnThis = document.getElementById('btn-this-weekend');
+      const btnNext = document.getElementById('btn-next-weekend');
+
+      if (offset === 0) {
+        btnThis.className = 'px-3 py-1.5 rounded-lg text-xs font-extrabold bg-espresso-900 text-latte-50 transition';
+        btnNext.className = 'px-3 py-1.5 rounded-lg text-xs font-bold text-espresso-700 hover:text-espresso-950 transition';
+      } else {
+        btnNext.className = 'px-3 py-1.5 rounded-lg text-xs font-extrabold bg-espresso-900 text-latte-50 transition';
+        btnThis.className = 'px-3 py-1.5 rounded-lg text-xs font-bold text-espresso-700 hover:text-espresso-950 transition';
+      }
+
+      renderWeekendUI();
+    };
+
+    window.selectWeekendDay = function(index) {
+      selectedDayIndex = index;
+      renderWeekendUI();
+    };
+
+    window.selectTimeSlot = function(slotKey, slotLabel) {
+      document.getElementById('selectedSlotKey').value = slotKey;
+      document.getElementById('selectedSlotLabel').value = slotLabel;
+      renderWeekendUI();
+    };
+
+    function renderWeekendUI() {
+      const days = getWeekendDates(weekendOffset);
+      const dayTabsEl = document.getElementById('weekend-day-tabs');
+      const slotsGridEl = document.getElementById('slots-grid');
+      const remainingBadgeEl = document.getElementById('slots-remaining-badge');
+      const currentSelectedKey = document.getElementById('selectedSlotKey').value;
+
+      // Render Saturday & Sunday selector cards
+      dayTabsEl.innerHTML = days.map((dayObj, idx) => {
+        const openCount = WEEKEND_TIME_SLOTS.filter(s => !bookedSlotsMap[`${dayObj.iso}_${s.id}`]).length;
+        const isSelected = idx === selectedDayIndex;
+        return `
+          <button type="button" onclick="selectWeekendDay(${idx})" class="p-3.5 rounded-2xl border-2 text-left transition ${
+            isSelected
+              ? 'bg-espresso-900 text-latte-50 border-gold-400 shadow-md'
+              : 'bg-latte-50 text-espresso-950 border-gold-400/60 hover:border-espresso-900'
+          }">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-extrabold uppercase tracking-wider ${isSelected ? 'text-gold-300' : 'text-espresso-700'}">${dayObj.dayName}</span>
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded-full ${
+                openCount > 0
+                  ? (isSelected ? 'bg-white/15 text-gold-300' : 'bg-latte-200 text-espresso-900')
+                  : 'bg-red-100 text-red-700'
+              }">${openCount} open</span>
+            </div>
+            <p class="font-serif text-xl font-extrabold mt-1">${dayObj.readable}</p>
+          </button>
+        `;
+      }).join('');
+
+      // Filter ONLY unbooked slots for the chosen weekend day
+      const activeDay = days[selectedDayIndex];
+      const availableSlots = WEEKEND_TIME_SLOTS.filter(slot => {
+        const key = `${activeDay.iso}_${slot.id}`;
+        return !bookedSlotsMap[key];
+      });
+
+      remainingBadgeEl.textContent = `${availableSlots.length} of ${WEEKEND_TIME_SLOTS.length} open`;
+
+      // Update top navbar badge
+      const totalThisWeekendOpen = getWeekendDates(0).reduce((acc, d) => {
+        return acc + WEEKEND_TIME_SLOTS.filter(s => !bookedSlotsMap[`${d.iso}_${s.id}`]).length;
+      }, 0);
+      const navBadge = document.getElementById('nav-slot-badge');
+      if (navBadge) navBadge.textContent = `${totalThisWeekendOpen} Open`;
+
+      // Clear selection if selected slot got booked by another user in real time
+      if (currentSelectedKey && bookedSlotsMap[currentSelectedKey]) {
+        document.getElementById('selectedSlotKey').value = '';
+        document.getElementById('selectedSlotLabel').value = '';
+        showToast('That slot was just booked by a neighbour! Please pick another open slot.');
+      }
+
+      if (availableSlots.length === 0) {
+        slotsGridEl.innerHTML = `
+          <div class="col-span-full bg-latte-50 rounded-2xl p-6 text-center border border-gold-400">
+            <p class="font-serif font-extrabold text-espresso-950 text-lg">All slots for ${activeDay.fullLabel} are booked!</p>
+            <p class="text-xs text-espresso-700 mt-1">Please check the other weekend day or switch to "Next Weekend" above.</p>
+          </div>
+        `;
+        return;
+      }
+
+      slotsGridEl.innerHTML = availableSlots.map(slot => {
+        const slotKey = `${activeDay.iso}_${slot.id}`;
+        const slotLabel = `${activeDay.fullLabel} • ${slot.label}`;
+        const isPicked = document.getElementById('selectedSlotKey').value === slotKey;
+        return `
+          <button type="button" onclick="selectTimeSlot('${slotKey}', '${slotLabel}')" class="p-3.5 rounded-2xl border-2 text-left transition ${
+            isPicked
+              ? 'slot-card-selected'
+              : 'bg-latte-50 hover:bg-latte-100 text-espresso-950 border-gold-400/60 hover:border-espresso-900'
+          }">
+            <div class="flex items-center justify-between gap-1">
+              <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-full ${
+                isPicked ? 'bg-gold-400 text-espresso-950' : 'bg-latte-200 text-espresso-900'
+              }">${slot.tag}</span>
+              <i class="fa-solid ${isPicked ? 'fa-circle-check text-gold-300' : 'fa-clock text-espresso-600'} text-xs"></i>
+            </div>
+            <p class="font-extrabold text-sm mt-2">${slot.label}</p>
+            <p class="text-[11px] ${isPicked ? 'text-gold-300' : 'text-espresso-700'} mt-0.5">1-on-1 Exclusive Slot</p>
+          </button>
+        `;
+      }).join('');
+    }
+
+    window.selectPackage = function(packageName) {
+      const selectEl = document.getElementById('selectedPackage');
+      for (let i = 0; i < selectEl.options.length; i++) {
+        if (packageName.startsWith(selectEl.options[i].value)) {
+          selectEl.selectedIndex = i;
+          break;
+        }
+      }
+      updateTotalPriceDisplay();
+      document.getElementById('book-walk').scrollIntoView({ behavior: 'smooth' });
+      showToast(`Selected plan: ${packageName}`);
+    };
+
+    window.selectTwoDogsMode = function() {
+      setDogCount(2);
+      document.getElementById('book-walk').scrollIntoView({ behavior: 'smooth' });
+      showToast('2-Dog Sibling Discount (25% OFF 2nd pup) applied!');
+    };
+
+    window.setDogCount = function(count) {
+      document.getElementById('dogCount').value = String(count);
+      const btn1 = document.getElementById('btn-dog-count-1');
+      const btn2 = document.getElementById('btn-dog-count-2');
+      const dog2Container = document.getElementById('dog2-fields-container');
+      const dog1Heading = document.getElementById('dog1-subheading');
+      const dog2NameInput = document.getElementById('dog2Name');
+      const dog2BreedInput = document.getElementById('dog2Breed');
+
+      if (count === 2) {
+        btn2.className = 'px-3.5 py-1.5 rounded-lg text-xs font-extrabold bg-espresso-900 text-latte-50 transition flex items-center gap-1.5';
+        btn1.className = 'px-3.5 py-1.5 rounded-lg text-xs font-bold text-espresso-800 hover:text-espresso-950 transition';
+        dog2Container.classList.remove('hidden');
+        dog1Heading.classList.remove('hidden');
+        dog2NameInput.required = true;
+        dog2BreedInput.required = true;
+      } else {
+        btn1.className = 'px-3.5 py-1.5 rounded-lg text-xs font-extrabold bg-espresso-900 text-latte-50 transition';
+        btn2.className = 'px-3.5 py-1.5 rounded-lg text-xs font-bold text-espresso-800 hover:text-espresso-950 transition flex items-center gap-1.5';
+        dog2Container.classList.add('hidden');
+        dog1Heading.classList.add('hidden');
+        dog2NameInput.required = false;
+        dog2BreedInput.required = false;
+      }
+      updateTotalPriceDisplay();
+    };
+
+    function calculatePricingSummary() {
+      const selectEl = document.getElementById('selectedPackage');
+      const selectedOption = selectEl.options[selectEl.selectedIndex];
+      const basePrice = Number(selectedOption.getAttribute('data-base-price') || 99);
+      const planLabel = selectedOption.value;
+      const dogCount = Number(document.getElementById('dogCount').value || 1);
+
+      if (dogCount === 2) {
+        const secondDogPrice = Math.round(basePrice * 0.75);
+        const totalPrice = basePrice + secondDogPrice;
+        return {
+          dogCount: 2,
+          basePrice,
+          secondDogPrice,
+          totalPrice,
+          planLabel,
+          breakdown: `2 Dogs • ₹${basePrice} (1st pup) + ₹${secondDogPrice} (2nd pup @ 25% OFF)`
+        };
+      }
+
+      return {
+        dogCount: 1,
+        basePrice,
+        secondDogPrice: 0,
+        totalPrice: basePrice,
+        planLabel,
+        breakdown: `1 Dog • Standard single-dog rate`
+      };
+    }
+
+    window.updateTotalPriceDisplay = function() {
+      const summary = calculatePricingSummary();
+      const priceEl = document.getElementById('calculated-total-price');
+      const breakdownEl = document.getElementById('price-breakdown-text');
+      if (priceEl) priceEl.textContent = `₹${summary.totalPrice}`;
+      if (breakdownEl) breakdownEl.textContent = summary.breakdown;
+    };
+
+    window.setWalkingRoute = function(routeText) {
+      const routeInput = document.getElementById('preferredRoute');
+      routeInput.value = routeText;
+      routeInput.focus();
+      showToast(`Walking path set: ${routeText}`);
+    };
+
+    window.simulateWhatsAppUpdate = function(text) {
+      const feed = document.getElementById('wa-chat-feed');
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      const bubble = document.createElement('div');
+      bubble.className = 'bg-white rounded-xl p-2.5 shadow-sm max-w-[88%]';
+      bubble.innerHTML = `
+        <p class="text-stone-800 font-semibold">${text}</p>
+        <span class="text-[10px] text-stone-400 block text-right mt-1">${timeStr}</span>
+      `;
+      feed.appendChild(bubble);
+      feed.scrollTop = feed.scrollHeight;
+    };
+
+    function formatWhatsAppBookingMessage(booking) {
+      const behaviorList = booking.behaviors.length > 0 ? booking.behaviors.join(', ') : 'Friendly & easygoing on the leash';
+      const isTwoDogs = Number(booking.dogCount) === 2;
+      const pupNames = isTwoDogs ? `${booking.dogName} & ${booking.dog2Name}` : booking.dogName;
+      const lines = [
+        `${EMOJI.paw} *New Weekend Walk Request via Paw Buddy* ${EMOJI.paw}`,
+        ``,
+        `Hi Omkar! I'm your neighbour *${booking.ownerName}*${booking.ownerGender ? ` (${booking.ownerGender})` : ''} from *${booking.flatNumber}*, and I'd love to book a happy weekend stroll for *${pupNames}*!`,
+        ``,
+        `${EMOJI.phone} *My WhatsApp:* ${booking.ownerWhatsapp}`,
+        booking.emergencyContact ? `${EMOJI.sos} *Alternate Contact:* ${booking.emergencyContact}` : null,
+        ``,
+        isTwoDogs ? `${EMOJI.dog} *Pup 1:* ${booking.dogName}${booking.dogGender ? ` (${booking.dogGender})` : ''} • ${booking.dogBreed}` : `${EMOJI.dog} *My Pup:* ${booking.dogName}${booking.dogGender ? ` (${booking.dogGender})` : ''} • ${booking.dogBreed}`,
+        `${EMOJI.ruler} *Size & Energy:* ${booking.dogSize} | ${booking.energyLevel}`,
+        isTwoDogs ? `` : null,
+        isTwoDogs ? `${EMOJI.dog} *Pup 2:* ${booking.dog2Name}${booking.dog2Gender ? ` (${booking.dog2Gender})` : ''} • ${booking.dog2Breed}` : null,
+        isTwoDogs ? `${EMOJI.ruler} *Pup 2 Size & Energy:* ${booking.dog2Size} | ${booking.dog2EnergyLevel}` : null,
+        isTwoDogs ? `${EMOJI.paw} *Walk Style:* ${booking.twoDogWalkStyle}` : null,
+        ``,
+        `${EMOJI.clipboard} *Habits & Leash Notes:* ${behaviorList}`,
+        `${EMOJI.noEntry} *Allergies / Treats:* ${booking.allergies || 'NA'}`,
+        `${EMOJI.route} *Preferred Route:* ${booking.preferredRoute || 'Strictly near the residential building & podium'}`,
+        booking.specialNotes ? `${EMOJI.memo} *A Little Note for You:* ${booking.specialNotes}` : null,
+        ``,
+        `${EMOJI.calendar} *Reserved Slot:* ${booking.slotLabel}`,
+        `${EMOJI.clock} *Walk Plan:* ${booking.selectedPackage} — *₹${booking.totalPrice}* (${booking.pricingBreakdown})`,
+        booking.firstMeetRequested ? `${EMOJI.paw} *Family Meet & Greet:* Yes please! Would love a 10–15 min hello together before our first walk.` : null,
+        `${EMOJI.check} *Doorstep Handoff:* I'll keep the leash(es), water bottle (if needed), and poop bags ready at pickup.`,
+        ``,
+        `${EMOJI.pin} Looking forward to meeting you! Please share your *WhatsApp Live Location* once you pick up ${pupNames}.`,
+        `Warm regards, *${booking.ownerName}* (${booking.flatNumber})`
+      ].filter(line => line !== null);
+
+      return lines.join('\n');
+    }
+
+    document.getElementById('booking-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const slotKey = document.getElementById('selectedSlotKey').value;
+      const slotLabel = document.getElementById('selectedSlotLabel').value;
+
+      if (!slotKey) {
+        showToast('Please select an open Saturday or Sunday time slot in Step 1 first!');
+        document.getElementById('weekend-day-tabs').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      if (bookedSlotsMap[slotKey]) {
+        showToast('Sorry! That slot was just booked by another neighbour. Please pick another open slot.');
+        renderWeekendUI();
+        return;
+      }
+
+      const submitBtn = document.getElementById('submit-booking-btn');
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-70');
+
+      const behaviors = Array.from(document.querySelectorAll('input[name="behavior"]:checked')).map(cb => cb.value);
+      const dogCount = Number(document.getElementById('dogCount').value || 1);
+      const pricing = calculatePricingSummary();
+      const historyId = `${slotKey}_${Date.now()}`;
+
+      const booking = {
+        historyId,
+        slotKey,
+        slotLabel,
+        dogCount,
+        ownerName: document.getElementById('ownerName').value.trim(),
+        ownerGender: document.getElementById('ownerGender').value,
+        flatNumber: document.getElementById('flatNumber').value.trim(),
+        ownerWhatsapp: document.getElementById('ownerWhatsapp').value.trim(),
+        emergencyContact: document.getElementById('emergencyContact').value.trim(),
+        dogName: document.getElementById('dogName').value.trim(),
+        dogGender: document.getElementById('dogGender').value,
+        dogBreed: document.getElementById('dogBreed').value.trim(),
+        dogSize: document.getElementById('dogSize').value,
+        energyLevel: document.getElementById('energyLevel').value,
+        dog2Name: dogCount === 2 ? document.getElementById('dog2Name').value.trim() : '',
+        dog2Gender: dogCount === 2 ? document.getElementById('dog2Gender').value : '',
+        dog2Breed: dogCount === 2 ? document.getElementById('dog2Breed').value.trim() : '',
+        dog2Size: dogCount === 2 ? document.getElementById('dog2Size').value : '',
+        dog2EnergyLevel: dogCount === 2 ? document.getElementById('dog2EnergyLevel').value : '',
+        twoDogWalkStyle: dogCount === 2 ? document.getElementById('twoDogWalkStyle').value : '',
+        behaviors,
+        selectedPackage: pricing.planLabel,
+        totalPrice: pricing.totalPrice,
+        pricingBreakdown: pricing.breakdown,
+        allergies: document.getElementById('allergies').value.trim(),
+        preferredRoute: document.getElementById('preferredRoute').value.trim(),
+        specialNotes: document.getElementById('specialNotes').value.trim(),
+        firstMeetRequested: document.getElementById('firstMeetRequested').checked,
+        bookedAt: new Date().toISOString()
+      };
+
+      try {
+        bookedSlotsMap[slotKey] = booking;
+        masterHistoryMap[historyId] = booking;
+
+        if (db && currentUser) {
+          const slotRef = doc(db, 'artifacts', appId, 'public', 'data', 'booked_slots', slotKey);
+          await setDoc(slotRef, booking);
+
+          // Also write to permanent Day-1 to Present Master History collection
+          const historyRef = doc(db, 'artifacts', appId, 'public', 'data', 'booking_history', historyId);
+          await setDoc(historyRef, booking);
+        }
+
+        document.getElementById('selectedSlotKey').value = '';
+        document.getElementById('selectedSlotLabel').value = '';
+        renderWeekendUI();
+        renderWalkerBookingsList();
+        renderMasterHistoryList();
+
+        currentFormattedMessage = formatWhatsAppBookingMessage(booking);
+        document.getElementById('whatsapp-preview-text').textContent = currentFormattedMessage;
+        document.getElementById('modal-locked-slot-badge').textContent = slotLabel;
+
+        const savedWalkerPhone = (adminConfig.walkerPhone || localStorage.getItem(WALKER_PHONE_KEY) || '').replace(/\D/g, '');
+        const encodedText = encodeURIComponent(currentFormattedMessage);
+        const waUrl = savedWalkerPhone
+          ? `https://api.whatsapp.com/send?phone=${savedWalkerPhone}&text=${encodedText}`
+          : `https://api.whatsapp.com/send?text=${encodedText}`;
+
+        document.getElementById('whatsapp-send-link').href = waUrl;
+        openBookingModal();
+      } catch (err) {
+        console.error("Error locking slot:", err);
+        showToast('Could not lock slot right now. Please try again.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('opacity-70');
+      }
+    });
+
+    // Admin PIN Gate & Hidden Trigger Controls
+    window.handleLogoAdminTap = function(event) {
+      logoTapCount += 1;
+      clearTimeout(logoTapTimer);
+      if (logoTapCount >= 10) {
+        event.preventDefault();
+        logoTapCount = 0;
+        openAdminPinModal();
+        return;
+      }
+      logoTapTimer = setTimeout(() => {
+        logoTapCount = 0;
+      }, 2500);
+    };
+
+    window.openAdminPinModal = function() {
+      if (isAdminUnlocked) {
+        openWalkerModal();
+        return;
+      }
+      const pinInput = document.getElementById('adminPinInput');
+      const errEl = document.getElementById('admin-pin-error');
+      if (pinInput) pinInput.value = '';
+      if (errEl) errEl.classList.add('hidden');
+      const modal = document.getElementById('admin-pin-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      setTimeout(() => pinInput && pinInput.focus(), 80);
+    };
+
+    window.closeAdminPinModal = function() {
+      const modal = document.getElementById('admin-pin-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    };
+
+    window.verifyAdminPin = function(event) {
+      event.preventDefault();
+      const entered = (document.getElementById('adminPinInput').value || '').trim();
+      const expected = String(adminConfig.adminPin || DEFAULT_ADMIN_PIN);
+      if (entered === expected) {
+        isAdminUnlocked = true;
+        closeAdminPinModal();
+        openWalkerModal();
+      } else {
+        document.getElementById('admin-pin-error').classList.remove('hidden');
+        document.getElementById('adminPinInput').value = '';
+        document.getElementById('adminPinInput').focus();
+      }
+    };
+
+    window.lockAdminDesk = function() {
+      isAdminUnlocked = false;
+      closeWalkerModal();
+      showToast('Admin Walker Desk locked.');
+    };
+
+    window.updateAdminPin = async function() {
+      if (!isAdminUnlocked) return;
+      const newPin = (document.getElementById('newAdminPinInput').value || '').trim();
+      if (!/^\d{10}$/.test(newPin)) {
+        showToast('Please enter an exact 10-digit numeric PIN.');
+        return;
+      }
+      adminConfig.adminPin = newPin;
+      try {
+        if (db && currentUser) {
+          const configRef = doc(db, 'artifacts', appId, 'public', 'data', 'admin_settings', 'walker_config');
+          await setDoc(configRef, { adminPin: newPin }, { merge: true });
+        }
+        document.getElementById('newAdminPinInput').value = '';
+        showToast('Secret 10-Digit Admin PIN updated!');
+      } catch (err) {
+        console.error('Error updating PIN:', err);
+        showToast('Could not update PIN right now.');
+      }
+    };
+
+    // Modal & Walker Desk Controls
+    window.openWalkerProfileModal = function() {
+      const modal = document.getElementById('walker-profile-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    };
+
+    window.closeWalkerProfileModal = function() {
+      const modal = document.getElementById('walker-profile-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    };
+
+    window.bookWithOmkarFromProfile = function() {
+      closeWalkerProfileModal();
+      document.getElementById('book-walk').scrollIntoView({ behavior: 'smooth' });
+    };
+
+    function applySavedWalkerPhoto() {
+      const savedPhoto = localStorage.getItem(WALKER_PHOTO_KEY);
+      const imgEl = document.getElementById('walker-profile-photo-img');
+      const fallbackEl = document.getElementById('walker-profile-photo-fallback');
+      if (savedPhoto) {
+        imgEl.src = savedPhoto;
+        imgEl.classList.remove('hidden');
+        fallbackEl.classList.add('hidden');
+      } else {
+        imgEl.src = '';
+        imgEl.classList.add('hidden');
+        fallbackEl.classList.remove('hidden');
+      }
+    }
+
+    window.handleWalkerPhotoUpload = function(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const img = new Image();
+        img.onload = function() {
+          const canvas = document.createElement('canvas');
+          const size = 320;
+          canvas.width = size;
+          canvas.height = size;
+          const ctx = canvas.getContext('2d');
+          const minDim = Math.min(img.width, img.height);
+          const sx = (img.width - minDim) / 2;
+          const sy = (img.height - minDim) / 2;
+          ctx.drawImage(img, sx, sy, minDim, minDim, 0, 0, size, size);
+          const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+          localStorage.setItem(WALKER_PHOTO_KEY, dataUrl);
+          applySavedWalkerPhoto();
+          showToast('Your profile photo is updated!');
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    };
+
+    window.clearWalkerPhoto = function() {
+      localStorage.removeItem(WALKER_PHOTO_KEY);
+      applySavedWalkerPhoto();
+      showToast('Reset to default walker avatar.');
+    };
+
+    window.openBookingModal = function() {
+      const modal = document.getElementById('booking-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    };
+
+    window.closeBookingModal = function() {
+      const modal = document.getElementById('booking-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    };
+
+    window.copyBookingText = function() {
+      if (!currentFormattedMessage) return;
+      const tempTextArea = document.createElement('textarea');
+      tempTextArea.value = currentFormattedMessage;
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempTextArea);
+      showToast('WhatsApp message copied to clipboard!');
+    };
+
+    window.openWalkerModal = function() {
+      if (!isAdminUnlocked) {
+        openAdminPinModal();
+        return;
+      }
+      const savedPhone = adminConfig.walkerPhone || localStorage.getItem(WALKER_PHONE_KEY) || '';
+      document.getElementById('walkerPhoneInput').value = savedPhone;
+      renderWalkerBookingsList();
+      renderMasterHistoryList();
+      const modal = document.getElementById('walker-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    };
+
+    window.closeWalkerModal = function() {
+      const modal = document.getElementById('walker-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    };
+
+    window.saveWalkerPhone = async function() {
+      if (!isAdminUnlocked) return;
+      const val = document.getElementById('walkerPhoneInput').value.trim();
+      const digitsOnly = val.replace(/\D/g, '');
+      if (digitsOnly.length < 10) {
+        showToast('Please enter a valid WhatsApp number with country code (e.g., 919876543210).');
+        return;
+      }
+      adminConfig.walkerPhone = digitsOnly;
+      localStorage.setItem(WALKER_PHONE_KEY, digitsOnly);
+      try {
+        if (db && currentUser) {
+          const configRef = doc(db, 'artifacts', appId, 'public', 'data', 'admin_settings', 'walker_config');
+          await setDoc(configRef, { walkerPhone: digitsOnly }, { merge: true });
+        }
+        showToast('Walker WhatsApp number saved & locked for all bookings!');
+      } catch (err) {
+        console.error('Error saving walker phone:', err);
+        showToast('Saved locally! Cloud sync will retry shortly.');
+      }
+    };
+
+    window.reopenBookedSlot = async function(slotKey) {
+      if (!isAdminUnlocked) return;
+      try {
+        delete bookedSlotsMap[slotKey];
+
+        if (db && currentUser) {
+          const slotRef = doc(db, 'artifacts', appId, 'public', 'data', 'booked_slots', slotKey);
+          await deleteDoc(slotRef);
+        }
+
+        renderWeekendUI();
+        renderWalkerBookingsList();
+        showToast('Slot re-opened! Your Day-1 master database record remains safely saved.');
+      } catch (err) {
+        console.error('Error re-opening slot:', err);
+        showToast('Could not re-open slot. Please try again.');
+      }
+    };
+
+    function renderMasterHistoryList() {
+      const listEl = document.getElementById('master-history-list');
+      const totalBadgeEl = document.getElementById('master-history-total');
+
+      // Merge permanent history with any active booked slots (deduplicated by slotKey + bookedAt)
+      const combinedMap = { ...masterHistoryMap };
+      Object.values(bookedSlotsMap || {}).forEach(b => {
+        const fallbackKey = b.historyId || `${b.slotKey}_${b.bookedAt || ''}`;
+        if (!combinedMap[fallbackKey]) {
+          combinedMap[fallbackKey] = b;
+        }
+      });
+
+      const allRecords = Object.values(combinedMap).sort((a, b) =>
+        (b.bookedAt || '').localeCompare(a.bookedAt || '')
+      );
+
+      if (totalBadgeEl) {
+        const totalRevenue = allRecords.reduce((sum, r) => sum + (Number(r.totalPrice) || 0), 0);
+        totalBadgeEl.textContent = `${allRecords.length} total • ₹${totalRevenue}`;
+      }
+
+      if (!listEl) return;
+
+      if (allRecords.length === 0) {
+        listEl.innerHTML = `
+          <div class="text-center py-5 bg-latte-50 rounded-2xl border border-gold-400/60">
+            <p class="text-xs font-bold text-espresso-900">No historical records yet</p>
+            <p class="text-[11px] text-espresso-700 mt-0.5">Every booking from Day 1 onwards is automatically logged here.</p>
+          </div>
+        `;
+        return;
+      }
+
+      listEl.innerHTML = allRecords.map((b, index) => {
+        const bookedDate = b.bookedAt
+          ? new Date(b.bookedAt).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' })
+          : 'Recorded';
+        const dogSummary = Number(b.dogCount) === 2 && b.dog2Name
+          ? `${b.dogName} (${b.dogBreed}) &amp; ${b.dog2Name} (${b.dog2Breed})`
+          : `${b.dogName || 'Dog'} (${b.dogBreed || ''})`;
+        return `
+          <div class="p-3 rounded-2xl bg-latte-50/90 border border-gold-400/60 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="font-extrabold text-espresso-950">#${allRecords.length - index} • ${b.ownerName || 'Resident'}</span>
+                <span class="bg-latte-200 text-espresso-900 px-2 py-0.5 rounded-full font-bold text-[10px]">${b.flatNumber || ''}</span>
+                <span class="text-[10px] text-espresso-600">Booked on ${bookedDate}</span>
+              </div>
+              <p class="text-espresso-800 font-semibold mt-0.5">${dogSummary} • <span class="text-espresso-950">${b.slotLabel || b.slotKey}</span></p>
+              <p class="text-[11px] text-espresso-700">WhatsApp: ${b.ownerWhatsapp || ''} • ${b.selectedPackage || ''} • <strong>₹${b.totalPrice || 0}</strong></p>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    window.exportConsolidatedCSV = function() {
+      if (!isAdminUnlocked) {
+        openAdminPinModal();
+        return;
+      }
+      const combinedMap = { ...masterHistoryMap };
+      Object.values(bookedSlotsMap || {}).forEach(b => {
+        const fallbackKey = b.historyId || `${b.slotKey}_${b.bookedAt || ''}`;
+        if (!combinedMap[fallbackKey]) {
+          combinedMap[fallbackKey] = b;
+        }
+      });
+
+      const records = Object.values(combinedMap).sort((a, b) =>
+        (a.bookedAt || '').localeCompare(b.bookedAt || '')
+      );
+
+      if (records.length === 0) {
+        showToast('No booking records available to export yet.');
+        return;
+      }
+
+      const headers = [
+        'Sr No',
+        'Booked Date & Time',
+        'Walk Slot',
+        'Pet Parent Name',
+        'Pet Parent Gender',
+        'Flat / Wing',
+        'Owner WhatsApp',
+        'Emergency Contact',
+        'Number of Dogs',
+        'Dog 1 Name',
+        'Dog 1 Gender',
+        'Dog 1 Breed',
+        'Dog 1 Size',
+        'Dog 1 Energy',
+        'Dog 2 Name',
+        'Dog 2 Gender',
+        'Dog 2 Breed',
+        'Dog 2 Size',
+        'Dog 2 Energy',
+        'Two-Dog Walk Style',
+        'Behaviour Notes',
+        'Allergies',
+        'Preferred Walking Area',
+        'Special Instructions',
+        'Walk Plan',
+        'Total Charges (INR)',
+        'First-Time 10-15 Min Meet Requested'
+      ];
+
+      const escapeCsv = (val) => {
+        const str = val === null || val === undefined ? '' : String(val);
+        return `"${str.replace(/"/g, '""')}"`;
+      };
+
+      const rows = records.map((r, idx) => [
+        idx + 1,
+        r.bookedAt ? new Date(r.bookedAt).toLocaleString('en-IN') : '',
+        r.slotLabel || r.slotKey || '',
+        r.ownerName || '',
+        r.ownerGender || '',
+        r.flatNumber || '',
+        r.ownerWhatsapp || '',
+        r.emergencyContact || '',
+        r.dogCount || 1,
+        r.dogName || '',
+        r.dogGender || '',
+        r.dogBreed || '',
+        r.dogSize || '',
+        r.energyLevel || '',
+        r.dog2Name || '',
+        r.dog2Gender || '',
+        r.dog2Breed || '',
+        r.dog2Size || '',
+        r.dog2EnergyLevel || '',
+        r.twoDogWalkStyle || '',
+        Array.isArray(r.behaviors) ? r.behaviors.join('; ') : '',
+        r.allergies || 'None',
+        r.preferredRoute || '',
+        r.specialNotes || '',
+        r.selectedPackage || '',
+        r.totalPrice || 0,
+        r.firstMeetRequested ? 'Yes' : 'No'
+      ].map(escapeCsv).join(','));
+
+      const csvContent = '\uFEFF' + [headers.map(escapeCsv).join(','), ...rows].join('\n');
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      const todayStr = new Date().toISOString().slice(0, 10);
+      link.href = url;
+      link.setAttribute('download', `PawBuddy_Consolidated_Bookings_${todayStr}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      showToast(`Exported ${records.length} consolidated booking(s) to Excel/CSV!`);
+    };
+
+    function renderWalkerBookingsList() {
+      const listEl = document.getElementById('walker-bookings-list');
+      const countPillEl = document.getElementById('booked-count-pill');
+      const totalLabelEl = document.getElementById('walker-booked-total');
+      const entries = Object.values(bookedSlotsMap || {});
+
+      if (countPillEl) countPillEl.textContent = String(entries.length);
+      if (totalLabelEl) totalLabelEl.textContent = `${entries.length} booking${entries.length === 1 ? '' : 's'}`;
+
+      if (!listEl) return;
+
+      if (entries.length === 0) {
+        listEl.innerHTML = `
+          <div class="text-center py-6 bg-latte-50 rounded-2xl border border-gold-400/60">
+            <p class="text-sm font-bold text-espresso-900">No locked slots yet</p>
+            <p class="text-xs text-espresso-700 mt-1">When a neighbour books a weekend slot, it appears here.</p>
+          </div>
+        `;
+        return;
+      }
+
+      listEl.innerHTML = entries
+        .sort((a, b) => (a.slotKey || '').localeCompare(b.slotKey || ''))
+        .map(b => {
+          const dogDisplay = Number(b.dogCount) === 2 && b.dog2Name
+            ? `${b.dogName || 'Dog 1'} (${b.dogBreed || ''}) &amp; ${b.dog2Name} (${b.dog2Breed || ''})`
+            : `${b.dogName || 'Dog'} (${b.dogBreed || 'Breed'})`;
+          const priceDisplay = b.totalPrice ? ` • ₹${b.totalPrice}` : '';
+          return `
+          <div class="p-3.5 rounded-2xl bg-latte-50 border border-gold-400/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <span class="inline-block text-[11px] font-extrabold bg-espresso-900 text-gold-300 px-2.5 py-0.5 rounded-full">
+                ${b.slotLabel || b.slotKey}
+              </span>
+              <p class="font-extrabold text-sm text-espresso-950 mt-1">
+                ${dogDisplay} • <span class="text-espresso-700">${b.flatNumber || ''}</span>
+              </p>
+              <p class="text-xs text-espresso-700">
+                Owner: ${b.ownerName || ''} (${b.ownerWhatsapp || ''}) • ${b.selectedPackage || ''}${priceDisplay}
+              </p>
+              ${b.preferredRoute ? `<p class="text-[11px] text-gold-600 font-semibold mt-0.5">Area: ${b.preferredRoute}</p>` : ''}
+            </div>
+            <button type="button" onclick="reopenBookedSlot('${b.slotKey}')" class="shrink-0 bg-white hover:bg-red-50 text-red-600 border border-red-200 font-bold text-xs px-3 py-2 rounded-xl transition">
+              Re-open Slot
+            </button>
+          </div>
+        `;
+        }).join('');
+    }
+
+    function showToast(message) {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+      const toast = document.createElement('div');
+      toast.className = 'bg-espresso-950 text-latte-50 text-xs sm:text-sm font-semibold px-4 py-3 rounded-2xl shadow-xl border border-gold-400 flex items-center gap-2.5 max-w-sm';
+      toast.innerHTML = `<i class="fa-solid fa-paw text-gold-300"></i><span>${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'transition-opacity', 'duration-300');
+        setTimeout(() => toast.remove(), 300);
+      }, 3200);
+    }
+
+    // Initialize UI on load
+    applySavedWalkerPhoto();
+    renderWeekendUI();
+    renderWalkerBookingsList();
+    renderMasterHistoryList();
+    initCloudSync();
+  </script>
+</body>
+</html>
